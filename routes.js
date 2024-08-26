@@ -23,4 +23,5 @@ router.get("/dashboard/deletestation/:id", dashboardController.deleteStation);
 
 router.get("/station/:stationid/deletereport/:reportid", stationController.deleteReport);
 
+router.get("/playlist/:playlistid/deletetrack/:trackid", playlistController.deleteTrack);
 
