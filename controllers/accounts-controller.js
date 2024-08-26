@@ -16,13 +16,13 @@ export const accountsController = {
   },
 
   logout(request, response) {
-    response.cookie("playlist", "");
+    response.cookie("station", "");
     response.redirect("/");
   },
 
   signup(request, response) {
     const viewData = {
-      title: "Login to the Service",
+      title: "Login to the Weather Station",
     };
     response.render("signup-view", viewData);
   },
