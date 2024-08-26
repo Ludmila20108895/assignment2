@@ -18,6 +18,15 @@
       "pressure": "8",
       "_id": "a83a15eb-c5de-4f3f-a722-2718256d996d",
       "stationId": "6b67b863-4c8d-4141-9115-305aef3c7ba4"
+    },
+    {
+      "code": "21",
+      "temperature": "25",
+      "windSpeed": "3.5",
+      "windDirection": "7",
+      "pressure": "0",
+      "_id": "163241d9-a05c-4113-b8c7-6bfb61e5e5b0",
+      "stationId": "cd899088-284e-4ace-81a9-0f067e689fad"
     }
   ]
 }
