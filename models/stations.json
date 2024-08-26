@@ -1,0 +1,25 @@
+{
+  "file": "./models/stations.json",
+  "stations": [
+    {
+      "title": "Tramore",
+      "_id": "6b67b863-4c8d-4141-9115-305aef3c7ba4"
+    },
+    {
+      "title": "Dunmore",
+      "_id": "12671d07-8b13-4431-a2a2-a86a2416b5b1"
+    },
+    {
+      "title": "tramore",
+      "_id": "595dc737-8f4b-45f7-a90f-2af810ee15b1"
+    },
+    {
+      "title": "dunmore",
+      "_id": "2330b80f-c48a-4d1f-9d34-e5ef5c83561b"
+    },
+    {
+      "title": "sallins",
+      "_id": "baed3410-ada1-45c3-b983-b805cde8cbfe"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{{> menu}}
+
+<section class="section">
+  <div class="title">
+    {{station.title}}
+  </div>
+
+  <!-- Include the list-reports partial -->
+  {{> list-reports}}
+
+  <!-- Form to add a new report -->
+  <form class="box" action="/station/{{station._id}}/addreport" method="POST">
+    <label>Enter Report Details:</label>
+    <div class="field is-horizontal">
+      <div class="field-body">
+        <div class="field">
+          <input class="input" type="text" placeholder="Enter Code" name="code">
+        </div>
+        <div class="field">
+          <input class="input" type="text" placeholder="Enter Temperature" name="temperature">
+        </div>
+        <div class="field">
+          <input class="input" type="text" placeholder="Enter Wind Speed" name="windSpeed">
+        </div>
+        <div class="field">
+          <input class="input" type="text" placeholder="Enter Wind Direction" name="windDirection">
+        </div>
+        <div class="field">
+          <input class="input" type="text" placeholder="Enter Pressure" name="pressure">
+        </div>
+      </div>
+    </div>
+    <button class="button is-primary">Submit Report</button>
+  </form>
+</section>

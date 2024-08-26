@@ -1,0 +1,26 @@
+{{> menu active="station"}}
+
+<section class="section">
+  <div class="container">
+    <h1 class="title">{{station.title}}</h1>
+    
+    <!-- Information about the Station -->
+    <p><strong>Station ID:</strong> {{station._id}}</p>
+    <p><strong>Created At:</strong> {{station.createdAt}}</p>
+    
+    
+    <!-- Udating Station-->
+    <form action="/station/{{station._id}}/update" method="POST">
+      <div class="field">
+        <label class="label">Station Title</label>
+        <input class="input" type="text" name="title" value="{{station.title}}" required>
+      </div>
+      <button class="button is-link">Update Station</button>
+    </form>
+
+    <!-- Deleting Station-->
+    <form action="/station/{{station._id}}/delete" method="POST" style="margin-top: 10px;">
+      <button class="button is-danger">Delete Station</button>
+    </form>
+  </div>
+</section>

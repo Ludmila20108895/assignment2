@@ -1,0 +1,23 @@
+{
+  "file": "./models/reports.json",
+  "reports": [
+    {
+      "code": "21",
+      "temperature": "37",
+      "windSpeed": "3.5",
+      "windDirection": "0",
+      "pressure": "0",
+      "_id": "f632d37c-15a4-4980-ad9c-8db1ed67786c",
+      "stationId": "12671d07-8b13-4431-a2a2-a86a2416b5b1"
+    },
+    {
+      "code": "3",
+      "temperature": "25",
+      "windSpeed": "2",
+      "windDirection": "0",
+      "pressure": "8",
+      "_id": "a83a15eb-c5de-4f3f-a722-2718256d996d",
+      "stationId": "6b67b863-4c8d-4141-9115-305aef3c7ba4"
+    }
+  ]
+}
