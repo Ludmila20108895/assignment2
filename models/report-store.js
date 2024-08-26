@@ -41,6 +41,13 @@ export const reportStore = {
     db.data.reports = [];
     await db.write();
   },
+  
+   async deleteReport(id) {
+ await db.read();
+ const index = db.data.reports.findIndex((report) => report._id === id);
+ db.data.report.splice(index, 1);
+ await db.write();
+ },
 
   async updateReport(reportId, updatedReport) {
     await db.read();

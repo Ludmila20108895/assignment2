@@ -39,12 +39,13 @@ export const stationController = {
     response.redirect(`/station/${stationId}`);
   },
   
-  async deleteReport(request, response) {
-        const stationId = request.params.stationid;
-        const reportId = request.params.reportid;
-        console.log(`Deleting Report ${reportId} from Station ${stationId}`);
-        await stationStore.deleteReport(reportId); 
-        response.redirect(`/station/${stationId}`);
-    },
+  
+   async deleteReport(request, response) {
+    const stationId = request.params.stationid;
+    const reportId = request.params.reportid;
+    console.log(`Deleting Report ${reportId} from Station ${stationId}`);
+    await reportStore.deleteReport(request.params.reportid);
+    response.redirect("/station/" + stationId);
+},
   
 };
