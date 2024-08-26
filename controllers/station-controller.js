@@ -38,4 +38,13 @@ export const stationController = {
     console.log(`Updated station ${stationId}`);
     response.redirect(`/station/${stationId}`);
   },
+  
+  async deleteReport(req, res) {
+        const stationId = req.params.stationid;
+        const reportId = req.params.reportid;
+        console.log(`Deleting Report ${reportId} from Station ${stationId}`);
+        await reportStore.deleteReport(reportId); // Adjust based on your actual implementation
+        res.redirect(`/station/${stationId}`);
+    },
+  
 };
