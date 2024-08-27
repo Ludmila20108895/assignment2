@@ -4,28 +4,31 @@
   <div class="container">
     <div class="columns is-vcentered">
       
-      <!-- Left column is text centered -->
+      <!-- Left column is sign in section -->
       <div class="column is-half">
+        <h1 class="title">Log in</h1>
+        <form action="/authenticate" method="POST">
+          <div class="field">
+            <label class="label">Email</label>
+            <input class="input" type="text" placeholder="Enter email" name="email">
+          </div>
+          <div class="field">
+            <label class="label">Password</label>
+            <input class="input" type="password" placeholder="Enter Password" name="password">
+          </div>
+          <div class="field is-grouped">
+            <button class="button is-link">Submit</button>
+          </div>
+        </form>
+      </div>
 
-  <h1 class="title">Log in</h1>
-  <form action="/authenticate" method="POST">
-    <div class="field">
-      <label class="label">Email</label> <input class="input" type="text" placeholder="Enter email" name="email">
-    </div>
-    <div class="field">
-      <label class="label">Password</label> <input class="input" type="password" placeholder="Enter Password" name="password">
-    </div>
-    <div class="field is-grouped">
-      <button class="button is-link">Submit</button>
-    </div>
-    
-  </form>
-        <div class="column is-half">
+      <!-- Right column has image -->
+      <div class="column is-half">
         <figure class="image">
           <img src="https://cdn.glitch.global/15a2efd3-f840-49ac-a10b-ac8fe4da5196/weather.png?v=1724031538687" alt="Weather Icons">
         </figure>
       </div>
+      
     </div>
-  </div>
   </div>
 </section>
