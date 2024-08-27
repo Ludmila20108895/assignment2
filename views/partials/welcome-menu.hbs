@@ -1,6 +1,12 @@
 <nav class="navbar mb-6">
   <div class="navbar-brand">
     {{> brand}}
+    <!-- Navbar burger for mobile view -->
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
   </div>
   <div class="navbar-menu" id="navMenu">
     <div class="navbar-end">
@@ -15,5 +21,17 @@
 </nav>
 
 <script>
+  // Activate the current menu item based on the active variable
   document.getElementById("{{active}}").classList.add("is-primary");
+
+  // Add event listener to toggle the navbar menu on small screens
+  document.addEventListener('DOMContentLoaded', () => {
+    const burger = document.querySelector('.navbar-burger');
+    const menu = document.querySelector('.navbar-menu');
+
+    burger.addEventListener('click', () => {
+      burger.classList.toggle('is-active');
+      menu.classList.toggle('is-active');
+    });
+  });
 </script>
