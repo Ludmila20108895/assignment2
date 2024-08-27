@@ -31,10 +31,8 @@ export const reportStore = {
   async deleteReport(id) {
     await db.read();
     const index = db.data.reports.findIndex((report) => report._id === id);
-    if (index !== -1) {
       db.data.reports.splice(index, 1);
       await db.write();
-    }
   },
 
   async deleteAllReports() {
@@ -42,13 +40,6 @@ export const reportStore = {
     await db.write();
   },
   
-   async deleteReport(id) {
- await db.read();
- const index = db.data.reports.findIndex((report) => report._id === id);
- db.data.report.splice(index, 1);
- await db.write();
- },
-
   async updateReport(reportId, updatedReport) {
     await db.read();
     const report = db.data.reports.find((report) => report._id === reportId);
