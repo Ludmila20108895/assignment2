@@ -1,6 +1,19 @@
+import { stationStore } from "../models/station-store.js";
 import { reportStore } from "../models/report-store.js";
 
 export const reportController = {
+  async index(request, response){
+    const stationId = request.params.stationid;
+    const reportId = request.params.reportid;
+    console.log(`Editing Track ${trackId} from Playlist ${playlistId}`);
+    const viewData = {
+      title: "Edit Song",
+      playlist: await playlistStore.getPlaylistById(playlistId),
+      track: await trackStore.getTrackById(trackId),
+    };
+    response.render("track-view", viewData);
+  },
+  }
   async addReport(request, response) {
     const stationId = request.params.id;
     const newReport = {
