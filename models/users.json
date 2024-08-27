@@ -14,6 +14,20 @@
       "email": "20108895@mail.wit.ie",
       "password": "Pass1234",
       "_id": "d84c27dc-eb76-4c93-b069-5833b43ee135"
+    },
+    {
+      "firstName": "Ludmila",
+      "lastName": "Bulat",
+      "email": "20108895@mail.wit.ie",
+      "password": "Pass1234",
+      "_id": "f77579f2-fb4a-4a9b-bf0b-713dd35fc0b3"
+    },
+    {
+      "firstName": "Sofia",
+      "lastName": "Bulat",
+      "email": "ludmilabulat2021@gmail.com",
+      "password": "Pass1234",
+      "_id": "4d7a12ac-91f8-49c4-98c5-f0758f27cd38"
     }
   ]
 }
