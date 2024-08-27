@@ -46,7 +46,7 @@ export const accountsController = {
   },
 
   async getLoggedInUser(request) {
-    const userEmail = request.cookies.playlist;
+    const userEmail = request.cookies.station;
     return await userStore.getUserByEmail(userEmail);
   },
 };
