@@ -1,4 +1,9 @@
 {
   "file": "./models/stations.json",
-  "stations": []
+  "stations": [
+    {
+      "title": "Sallins",
+      "_id": "94f206c7-b9de-4268-bc2c-d5e643dde521"
+    }
+  ]
 }

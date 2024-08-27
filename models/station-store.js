@@ -1,6 +1,6 @@
 import { v4 } from "uuid";
 import { initStore } from "../utils/store-utils.js";
-import { reportStore } from "./report-store.js"; // Imports the report store
+import { reportStore } from "./report-store.js"; // is importing the report store
 
 const db = initStore("stations");
 
@@ -18,15 +18,13 @@ export const stationStore = {
     return station;
   },
 
-  async getStationById(id) {
+ async getStationById(id) {
     await db.read();
-    const station = db.data.stations.find((station) => station._id === id);
-    if (station) {
-      // Gets all reports that relates the station
-      station.reports = await reportStore.getReportsByStationId(station._id);
-    }
-    return station;
-  },
+    const list = db.data.stations.find((station) => station._id === id);
+    list.reports = await reportStore.getReportsByStationId(list._id);
+    return list;
+},
+
 
   async deleteStationById(id) {
     await db.read();

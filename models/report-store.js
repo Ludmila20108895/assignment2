@@ -41,15 +41,12 @@ export const reportStore = {
   },
   
   async updateReport(reportId, updatedReport) {
-    await db.read();
-    const report = db.data.reports.find((report) => report._id === reportId);
-    if (report) {
+    const report =  await this.getReportById(reportId);
       report.code = updatedReport.code;
       report.temperature = updatedReport.temperature;
       report.windSpeed = updatedReport.windSpeed;
       report.windDirection = updatedReport.windDirection;
       report.pressure = updatedReport.pressure;
       await db.write();
-    }
   },
 };
