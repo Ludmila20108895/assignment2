@@ -28,6 +28,13 @@
       "email": "ludmilabulat2021@gmail.com",
       "password": "Pass1234",
       "_id": "4d7a12ac-91f8-49c4-98c5-f0758f27cd38"
+    },
+    {
+      "firstName": "Ludmila",
+      "lastName": "Bulat",
+      "email": "20108895@mail.wit.ie",
+      "password": "123",
+      "_id": "f179d469-dea4-42e3-bb5c-16c6cc12044b"
     }
   ]
 }
