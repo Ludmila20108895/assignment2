@@ -23,13 +23,23 @@ async addStation(request, response) {
     response.redirect("/dashboard");
 },
 
- 
-  
+
    async deleteStation(request, response) {
     const stationId = request.params.id;
     console.log(`Deleting Station ${stationId}`);
     await stationStore.deleteStationById(stationId);
     response.redirect("/dashboard");
 },
+   async authenticate(request, response) {
+ const user = await userStore.getUserByEmail(request.body.email);
+
+ if (user) {
+ response.cookie("playlist", user.email);
+ console.log(`logging in ${user.email}`);
+ response.redirect("/dashboard")}
+  else {
+ response.redirect("/login");
+ 
+   },
  
 };
