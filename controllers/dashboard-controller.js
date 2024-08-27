@@ -30,16 +30,6 @@ async addStation(request, response) {
     await stationStore.deleteStationById(stationId);
     response.redirect("/dashboard");
 },
-   async authenticate(request, response) {
- const user = await userStore.getUserByEmail(request.body.email);
-
- if (user) {
- response.cookie("playlist", user.email);
- console.log(`logging in ${user.email}`);
- response.redirect("/dashboard")}
-  else {
- response.redirect("/login");
- 
-   },
+  
  
 };
