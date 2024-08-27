@@ -25,15 +25,10 @@ router.get("/station/:stationid/deletereport/:reportid", stationController.delet
 router.get("/station/:stationid/editreport/:reportid", reportController.index);
 router.post("/station/:stationid/updatereport/:reportid", reportController.update);
 
-
-
-router.post("/station/:id/delete", stationController.deleteStation);
-router.post("/station/:id/update", stationController.updateStation);
-router.get("/station/:id/reports", reportController.viewReports);
-
-
 router.get("/about", aboutController.index);
 router.get("/logout", accountsController.logout);
+
+
 
 
 
