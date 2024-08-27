@@ -5,15 +5,15 @@ export const reportController = {
   async index(request, response){
     const stationId = request.params.stationid;
     const reportId = request.params.reportid;
-    console.log(`Editing Track ${trackId} from Playlist ${playlistId}`);
+    console.log(`Editing Report ${reportId} from Station ${stationId}`);
     const viewData = {
-      title: "Edit Song",
-      playlist: await playlistStore.getPlaylistById(playlistId),
-      track: await trackStore.getTrackById(trackId),
+      title: "Edit Report",
+      station: await stationStore.getStationById(stationId),
+      report: await reportStore.getReportById(reportId),
     };
-    response.render("track-view", viewData);
+    response.render("report-view", viewData);
   },
-  }
+  
   async addReport(request, response) {
     const stationId = request.params.id;
     const newReport = {
@@ -38,5 +38,5 @@ export const reportController = {
     console.log(`Deleting Report ${reportId} from Station ${stationId}`);
     await reportStore.deleteReport(request.params.reportid);
     response.redirect("/station/" + stationId);
-},
+  },
 };
