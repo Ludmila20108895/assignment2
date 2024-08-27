@@ -25,27 +25,29 @@ export const stationStore = {
     return list;
 },
 
+  async getStationsByUserId(userid) {
+    await db.read();
+    return db.data.stations.filter((station) => station.userid === userid);
+},
 
-  async deleteStationById(id) {
+
+ async deleteStationById(id) {
     await db.read();
     const index = db.data.stations.findIndex((station) => station._id === id);
-    if (index !== -1) {
-      db.data.stations.splice(index, 1);
-      await db.write();
-    }
-  },
+    db.data.stations.splice(index, 1);
+    await db.write();
+},
+
 
   async deleteAllStations() {
     db.data.stations = [];
     await db.write();
   },
 
-  async updateStation(id, updatedData) {
+ async updateStation(id, updatedData) {
     await db.read();
     const station = db.data.stations.find((station) => station._id === id);
-    if (station) {
-      Object.assign(station, updatedData);
-      await db.write();
-    }
-  },
+    await db.write();
+},
+
 };
