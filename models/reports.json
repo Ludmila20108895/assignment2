@@ -27,6 +27,15 @@
       "pressure": "0",
       "_id": "163241d9-a05c-4113-b8c7-6bfb61e5e5b0",
       "stationId": "cd899088-284e-4ace-81a9-0f067e689fad"
+    },
+    {
+      "code": "2",
+      "temperature": "372",
+      "windSpeed": "2",
+      "windDirection": "2",
+      "pressure": "2",
+      "_id": "0702f0a7-a45c-4e7a-9dc5-9b65562d9841",
+      "stationId": "57e54aae-c018-4efb-8569-6c17a6696363"
     }
   ]
 }
