@@ -1,1 +1,12 @@
-{"file":"./models/users.json","users":[]}
+{
+  "file": "./models/users.json",
+  "users": [
+    {
+      "firstName": "Ludmila",
+      "lastName": "Bulat",
+      "email": "20108895@mail.wit.ie",
+      "password": "Pass1234",
+      "_id": "d18a8e89-3588-4f3f-8b65-843368e8bf8d"
+    }
+  ]
+}
