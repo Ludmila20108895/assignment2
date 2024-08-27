@@ -7,7 +7,6 @@ import { aboutController } from "./controllers/about-controller.js";
 
 export const router = express.Router();
 
-
 router.get("/", accountsController.index);
 
 router.get("/login", accountsController.login);
@@ -23,16 +22,18 @@ router.get("/station/:id", stationController.index);
 
 router.post("/station/:id/addreport", stationController.addReport);
 router.get("/station/:stationid/deletereport/:reportid", stationController.deleteReport);
+router.get("/station/:stationid/editreport/:reportid", reportController.index);
+router.post("/station/:stationid/updatereport/:reportid", reportController.update);
+
+
 
 router.post("/station/:id/delete", stationController.deleteStation);
 router.post("/station/:id/update", stationController.updateStation);
-
-
 router.get("/station/:id/reports", reportController.viewReports);
 
 
 router.get("/about", aboutController.index);
-
+router.get("/logout", accountsController.logout);
 
 
 
