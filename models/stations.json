@@ -19,6 +19,51 @@
       "title": "Dublin",
       "userid": "d18a8e89-3588-4f3f-8b65-843368e8bf8d",
       "_id": "36b60ef1-37f8-40f4-9575-864d4ffc79d4"
+    },
+    {
+      "title": "Dublin",
+      "latitude": "4",
+      "longitude": "6",
+      "userid": "d18a8e89-3588-4f3f-8b65-843368e8bf8d",
+      "weatherCode": "N/A",
+      "minTemp": "N/A",
+      "maxTemp": "N/A",
+      "windDirection": "N/A",
+      "minWindSpeed": "N/A",
+      "maxWindSpeed": "N/A",
+      "minPressure": "N/A",
+      "maxPressure": "N/A",
+      "_id": "ddccca4a-4dc9-4245-9ee2-b9675ad2ef1f"
+    },
+    {
+      "title": "Dublin",
+      "latitude": "4",
+      "longitude": "6",
+      "userid": "d18a8e89-3588-4f3f-8b65-843368e8bf8d",
+      "weatherCode": "N/A",
+      "minTemp": "N/A",
+      "maxTemp": "N/A",
+      "windDirection": "N/A",
+      "minWindSpeed": "N/A",
+      "maxWindSpeed": "N/A",
+      "minPressure": "N/A",
+      "maxPressure": "N/A",
+      "_id": "f2cc7a37-3827-40f3-91ed-077340012a72"
+    },
+    {
+      "title": "Dublin",
+      "latitude": "4",
+      "longitude": "6",
+      "userid": "d18a8e89-3588-4f3f-8b65-843368e8bf8d",
+      "weatherCode": "N/A",
+      "minTemp": "N/A",
+      "maxTemp": "N/A",
+      "windDirection": "N/A",
+      "minWindSpeed": "N/A",
+      "maxWindSpeed": "N/A",
+      "minPressure": "N/A",
+      "maxPressure": "N/A",
+      "_id": "ed3bf579-3aa0-4c57-957d-8b0a7e7f6f10"
     }
   ]
 }
