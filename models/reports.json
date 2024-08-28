@@ -56,29 +56,12 @@
       "stationId": "5cf8e166-c5df-4290-b1ad-66d72ab68968"
     },
     {
-      "code": "9",
-      "temperature": "7",
-      "windSpeed": "9",
-      "windDirection": "1",
-      "pressure": "8",
-      "_id": "6a6dfa30-ae53-4827-8ffd-e5fd22a2907c",
-      "stationId": "5cf8e166-c5df-4290-b1ad-66d72ab68968"
-    },
-    {
       "code": "5",
       "temperature": "7",
       "windSpeed": "8",
       "pressure": "3",
       "_id": "5bfaac61-7bd1-4fd5-a03f-bbe5a59a4e04",
       "stationId": "4975a211-2413-4c7c-ab19-4580d87a4093"
-    },
-    {
-      "code": "6",
-      "temperature": "7",
-      "windSpeed": "9",
-      "pressure": "0",
-      "_id": "a651afe0-afcc-45d6-a58b-21fa4eac2267",
-      "stationId": "5cf8e166-c5df-4290-b1ad-66d72ab68968"
     },
     {
       "code": "6",
