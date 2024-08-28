@@ -4,45 +4,64 @@
   <div class="container">
     {{#each stations}}
     <div class="box">
-      <h1 class="title">{{this.title}}</h1>
-      <div class="columns">
-        <!-- Station Location -->
+      <!-- Station Title and Icons -->
+      <div class="columns is-vcentered">
         <div class="column">
+          <h1 class="title has-text-primary">{{this.title}}</h1>
+        </div>
+        <div class="column is-narrow">
+          <a href="/station/{{this._id}}" class="button is-info">
+            <span class="icon">
+              <i class="fas fa-folder-open"></i>
+            </span>
+          </a>
+          <button class="button is-danger">
+            <span class="icon">
+              <i class="fas fa-trash-alt"></i>
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Station Details in Boxes -->
+      <div class="columns is-multiline">
+        <!-- Station Location -->
+        <div class="column is-one-fifth">
           <div class="box has-background-dark has-text-white">
-            <h2 class="is-size-4">Station Location</h2>
+            <h2 class="is-size-5">Station Location</h2>
             <p>Name: {{this.title}}</p>
             <p>Latitude: {{this.latitude}}°</p>
             <p>Longitude: {{this.longitude}}°</p>
           </div>
         </div>
         <!-- Weather Code -->
-        <div class="column">
+        <div class="column is-one-fifth">
           <div class="box has-background-dark has-text-white">
-            <h2 class="is-size-4">Weather code</h2>
+            <h2 class="is-size-5">Weather Code</h2>
             <p>{{this.weatherCode}}</p>
           </div>
         </div>
         <!-- Temperature -->
-        <div class="column">
+        <div class="column is-one-fifth">
           <div class="box has-background-dark has-text-white">
-            <h2 class="is-size-4">Temp</h2>
+            <h2 class="is-size-5">Temp</h2>
             <p>Min Temp: {{this.minTemp}}°C</p>
             <p>Max Temp: {{this.maxTemp}}°C</p>
           </div>
         </div>
         <!-- Wind -->
-        <div class="column">
+        <div class="column is-one-fifth">
           <div class="box has-background-dark has-text-white">
-            <h2 class="is-size-4">Wind</h2>
-            <p>Wind Direction: {{this.windDirection}}</p>
-            <p>Min Wind Speed: {{this.minWindSpeed}} m/s</p>
-            <p>Max Wind Speed: {{this.maxWindSpeed}} m/s</p>
+            <h2 class="is-size-5">Wind</h2>
+            <p>Direction: {{this.windDirection}}</p>
+            <p>Min Speed: {{this.minWindSpeed}} m/s</p>
+            <p>Max Speed: {{this.maxWindSpeed}} m/s</p>
           </div>
         </div>
         <!-- Pressure -->
-        <div class="column">
+        <div class="column is-one-fifth">
           <div class="box has-background-dark has-text-white">
-            <h2 class="is-size-4">Pressure</h2>
+            <h2 class="is-size-5">Pressure</h2>
             <p>Min Pressure: {{this.minPressure}} atm</p>
             <p>Max Pressure: {{this.maxPressure}} atm</p>
           </div>
