@@ -1,9 +1,9 @@
 <table class="table is-fullwidth">
   <thead>
     <tr>
+      <th>Location</th>
       <th>Code</th>
-      <th>Temp</th>
-      <th>Wind Speed</th>
+      <th>Temperature</th>
       <th>Wind Direction</th>
       <th>Pressure</th>
     </tr>
@@ -11,8 +11,8 @@
   <tbody>
     {{#each station.reports}}
     <tr>
+      <td>{{location}}</td>
       <td>{{code}}</td>
-      <td>{{temperature}}</td>
       <td>{{windSpeed}}</td>
       <td>{{windDirection}}</td>
       <td>{{pressure}}</td>
