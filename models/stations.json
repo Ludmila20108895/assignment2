@@ -93,50 +93,7 @@
       "maxWindSpeed": "N/A",
       "minPressure": "N/A",
       "maxPressure": "N/A",
-      "_id": "037b4633-b2f2-4599-96e1-b1265004578c"
-    },
-    {
-      "title": "Dublin",
-      "latitude": "4",
-      "longitude": "6",
-      "userid": "d18a8e89-3588-4f3f-8b65-843368e8bf8d",
-      "weatherCode": "N/A",
-      "minTemp": "N/A",
-      "maxTemp": "N/A",
-      "windDirection": "N/A",
-      "minWindSpeed": "N/A",
-      "maxWindSpeed": "N/A",
-      "minPressure": "N/A",
-      "maxPressure": "N/A",
       "_id": "fd1e3cda-8606-4d07-b8ff-f4c6a2f19125"
-    },
-    {
-      "title": "London",
-      "userid": "d18a8e89-3588-4f3f-8b65-843368e8bf8d",
-      "weatherCode": "N/A",
-      "minTemp": "N/A",
-      "maxTemp": "N/A",
-      "windDirection": "N/A",
-      "minWindSpeed": "N/A",
-      "maxWindSpeed": "N/A",
-      "minPressure": "N/A",
-      "maxPressure": "N/A",
-      "_id": "82ab33f1-740e-45ec-97db-da1dfc4c3599"
-    },
-    {
-      "title": "Sallins",
-      "latitude": "4",
-      "longitude": "4",
-      "userid": "4d7a12ac-91f8-49c4-98c5-f0758f27cd38",
-      "weatherCode": "N/A",
-      "minTemp": "N/A",
-      "maxTemp": "N/A",
-      "windDirection": "N/A",
-      "minWindSpeed": "N/A",
-      "maxWindSpeed": "N/A",
-      "minPressure": "N/A",
-      "maxPressure": "N/A",
-      "_id": "39140cc6-6039-4bbe-8382-bb9f393150d5"
     }
   ]
 }
