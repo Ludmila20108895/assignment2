@@ -11,11 +11,6 @@
       "_id": "5cf8e166-c5df-4290-b1ad-66d72ab68968"
     },
     {
-      "title": "London",
-      "userid": "d18a8e89-3588-4f3f-8b65-843368e8bf8d",
-      "_id": "4975a211-2413-4c7c-ab19-4580d87a4093"
-    },
-    {
       "title": "Dublin",
       "userid": "d18a8e89-3588-4f3f-8b65-843368e8bf8d",
       "_id": "36b60ef1-37f8-40f4-9575-864d4ffc79d4"
@@ -79,21 +74,6 @@
       "minPressure": "N/A",
       "maxPressure": "N/A",
       "_id": "0e6fa5d3-351b-4452-8cde-a512247d4220"
-    },
-    {
-      "title": "Dublin",
-      "latitude": "4",
-      "longitude": "6",
-      "userid": "d18a8e89-3588-4f3f-8b65-843368e8bf8d",
-      "weatherCode": "N/A",
-      "minTemp": "N/A",
-      "maxTemp": "N/A",
-      "windDirection": "N/A",
-      "minWindSpeed": "N/A",
-      "maxWindSpeed": "N/A",
-      "minPressure": "N/A",
-      "maxPressure": "N/A",
-      "_id": "fd1e3cda-8606-4d07-b8ff-f4c6a2f19125"
     }
   ]
 }

@@ -1,5 +1,6 @@
 import { stationStore } from "../models/station-store.js";
 import { accountsController } from "./accounts-controller.js";
+import {stationController} from "./station-controller.js";
 
 export const dashboardController = {
   // Render the main dashboard view with a list of stations
