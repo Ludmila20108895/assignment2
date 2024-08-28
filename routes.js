@@ -20,8 +20,8 @@ router.post("/dashboard/addstation", dashboardController.addStation);
 router.get("/dashboard/deletestation/:id", dashboardController.deleteStation);
 router.get("/station/:id", stationController.index);
 
-
-router.get("/station/:stationid/deletereport/:reportid", stationController.deleteReport);
+router.post("/station/:id/addreport", reportController.addReport);
+router.get("/station/:stationid/deletereport/:reportid", reportController.deleteReport);
 router.get("/station/:stationid/editreport/:reportid", reportController.index);
 router.post("/station/:stationid/updatereport/:reportid", reportController.update);
 
