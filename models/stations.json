@@ -46,9 +46,9 @@
       "_id": "f2cc7a37-3827-40f3-91ed-077340012a72"
     },
     {
-      "title": "Dublin",
-      "latitude": "4",
-      "longitude": "6",
+      "title": "Paris",
+      "latitude": "00",
+      "longitude": "33",
       "userid": "d18a8e89-3588-4f3f-8b65-843368e8bf8d",
       "weatherCode": "N/A",
       "minTemp": "N/A",
@@ -58,7 +58,7 @@
       "maxWindSpeed": "N/A",
       "minPressure": "N/A",
       "maxPressure": "N/A",
-      "_id": "3eb4382a-b2e9-4707-8ede-d3b3b629e111"
+      "_id": "38176ba4-173e-4c83-b901-5f7577c11833"
     }
   ]
 }
