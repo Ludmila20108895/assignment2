@@ -79,6 +79,22 @@
       "pressure": "0",
       "_id": "a651afe0-afcc-45d6-a58b-21fa4eac2267",
       "stationId": "5cf8e166-c5df-4290-b1ad-66d72ab68968"
+    },
+    {
+      "code": "6",
+      "temperature": "2",
+      "windSpeed": "6",
+      "pressure": "7",
+      "_id": "d57b23d2-8ff0-4cce-bdf6-9d49c0b0a49c",
+      "stationId": "fd1e3cda-8606-4d07-b8ff-f4c6a2f19125"
+    },
+    {
+      "code": "6",
+      "temperature": "2",
+      "windSpeed": "6",
+      "pressure": "7",
+      "_id": "4b90319e-be5a-4399-8ad0-cd1cd5ae5632",
+      "stationId": "fd1e3cda-8606-4d07-b8ff-f4c6a2f19125"
     }
   ]
 }
