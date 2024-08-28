@@ -15,20 +15,21 @@ router.get("/logout", accountsController.logout);
 router.post("/register", accountsController.register);
 router.post("/authenticate", accountsController.authenticate);
 
-router.get("/dashboard", dashboardController.index);
-router.post("/dashboard/addstation", dashboardController.addStation);
+// Routes for Dashboard
+router.get("/dashboard", dashboardController.index); // Existing route for dashboard
+router.get("/dashboard/addstation", dashboardController.renderAddStationForm); // Render form to add a new station
+router.post("/dashboard/addstation", dashboardController.addStation); // Handle form submission for adding a station
+router.get("/dashboard/liststations", dashboardController.listStations); // Render list of stations
 router.get("/dashboard/deletestation/:id", dashboardController.deleteStation);
-router.get("/station/:id", stationController.index);
 
+// Routes for Stations
+router.get("/station/:id", stationController.index);
 router.post("/station/:id/addreport", reportController.addReport);
 router.get("/station/:stationid/deletereport/:reportid", reportController.deleteReport);
 router.get("/station/:stationid/editreport/:reportid", reportController.index);
 router.post("/station/:stationid/updatereport/:reportid", reportController.update);
 
+// About and Miscellaneous
 router.get("/about", aboutController.index);
 router.get("/logout", accountsController.logout);
-
-
-
-
 
