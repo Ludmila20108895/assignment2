@@ -16,11 +16,11 @@ router.post("/register", accountsController.register);
 router.post("/authenticate", accountsController.authenticate);
 
 // Routes for Dashboard
-router.get("/dashboard", dashboardController.index); // Existing route for dashboard
-router.get("/dashboard/addstation", dashboardController.renderAddStationForm); // Render form to add a new station
-router.post("/dashboard/addstation", dashboardController.addStation); // Handle form submission for adding a station
+router.get("/dashboard", dashboardController.index); // The route for dashboard
+router.get("/dashboard/addstation", dashboardController.renderAddStationForm); // Render to add  new station
+router.post("/dashboard/addstation", dashboardController.addStation); // Form for adding a station
 router.get("/dashboard/liststations", dashboardController.listStations); // Render list of stations
-router.get("/dashboard/deletestation/:id", dashboardController.deleteStation);
+router.get("/dashboard/deletestation/:id", dashboardController.deleteStation); //Form for deleting sdtation
 
 // Routes for Stations
 router.get("/station/:id", stationController.index);

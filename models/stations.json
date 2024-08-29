@@ -4,6 +4,21 @@
     {
       "title": "Sallins",
       "_id": "94f206c7-b9de-4268-bc2c-d5e643dde521"
+    },
+    {
+      "title": "dublin",
+      "latitude": "",
+      "longitude": "",
+      "userid": "d18a8e89-3588-4f3f-8b65-843368e8bf8d",
+      "weatherCode": "N/A",
+      "minTemp": "N/A",
+      "maxTemp": "N/A",
+      "windDirection": "N/A",
+      "minWindSpeed": "N/A",
+      "maxWindSpeed": "N/A",
+      "minPressure": "N/A",
+      "maxPressure": "N/A",
+      "_id": "a91e454f-7f9f-4146-abdd-994d5a201485"
     }
   ]
 }
