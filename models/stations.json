@@ -6,11 +6,6 @@
       "_id": "94f206c7-b9de-4268-bc2c-d5e643dde521"
     },
     {
-      "title": "Sallins",
-      "userid": "d18a8e89-3588-4f3f-8b65-843368e8bf8d",
-      "_id": "5cf8e166-c5df-4290-b1ad-66d72ab68968"
-    },
-    {
       "title": "Dublin",
       "userid": "d18a8e89-3588-4f3f-8b65-843368e8bf8d",
       "_id": "36b60ef1-37f8-40f4-9575-864d4ffc79d4"
@@ -44,36 +39,6 @@
       "minPressure": "N/A",
       "maxPressure": "N/A",
       "_id": "f2cc7a37-3827-40f3-91ed-077340012a72"
-    },
-    {
-      "title": "Paris",
-      "latitude": "00",
-      "longitude": "33",
-      "userid": "d18a8e89-3588-4f3f-8b65-843368e8bf8d",
-      "weatherCode": "N/A",
-      "minTemp": "N/A",
-      "maxTemp": "N/A",
-      "windDirection": "N/A",
-      "minWindSpeed": "N/A",
-      "maxWindSpeed": "N/A",
-      "minPressure": "N/A",
-      "maxPressure": "N/A",
-      "_id": "38176ba4-173e-4c83-b901-5f7577c11833"
-    },
-    {
-      "title": "",
-      "latitude": "",
-      "longitude": "",
-      "userid": "d18a8e89-3588-4f3f-8b65-843368e8bf8d",
-      "weatherCode": "N/A",
-      "minTemp": "N/A",
-      "maxTemp": "N/A",
-      "windDirection": "N/A",
-      "minWindSpeed": "N/A",
-      "maxWindSpeed": "N/A",
-      "minPressure": "N/A",
-      "maxPressure": "N/A",
-      "_id": "9fa1e0e9-a78f-48fb-92d2-9b13f239a7b2"
     }
   ]
 }
