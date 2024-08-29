@@ -24,21 +24,6 @@
       "minPressure": "N/A",
       "maxPressure": "N/A",
       "_id": "ddccca4a-4dc9-4245-9ee2-b9675ad2ef1f"
-    },
-    {
-      "title": "Dublin",
-      "latitude": "4",
-      "longitude": "6",
-      "userid": "d18a8e89-3588-4f3f-8b65-843368e8bf8d",
-      "weatherCode": "N/A",
-      "minTemp": "N/A",
-      "maxTemp": "N/A",
-      "windDirection": "N/A",
-      "minWindSpeed": "N/A",
-      "maxWindSpeed": "N/A",
-      "minPressure": "N/A",
-      "maxPressure": "N/A",
-      "_id": "f2cc7a37-3827-40f3-91ed-077340012a72"
     }
   ]
 }
