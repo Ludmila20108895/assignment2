@@ -59,6 +59,21 @@
       "minPressure": "N/A",
       "maxPressure": "N/A",
       "_id": "38176ba4-173e-4c83-b901-5f7577c11833"
+    },
+    {
+      "title": "",
+      "latitude": "",
+      "longitude": "",
+      "userid": "d18a8e89-3588-4f3f-8b65-843368e8bf8d",
+      "weatherCode": "N/A",
+      "minTemp": "N/A",
+      "maxTemp": "N/A",
+      "windDirection": "N/A",
+      "minWindSpeed": "N/A",
+      "maxWindSpeed": "N/A",
+      "minPressure": "N/A",
+      "maxPressure": "N/A",
+      "_id": "9fa1e0e9-a78f-48fb-92d2-9b13f239a7b2"
     }
   ]
 }
