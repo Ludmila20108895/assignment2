@@ -28,7 +28,7 @@ export const dashboardController = {
       latitude: request.body.latitude,
       longitude: request.body.longitude,
       userid: loggedInUser._id,
-      weatherCode: 'N/A',    // Placeholder values for new stations
+     /weatherCode: 'N/A',    // Placeholder values for new stations
       minTemp: 'N/A',
       maxTemp: 'N/A',
       windDirection: 'N/A',
@@ -39,7 +39,7 @@ export const dashboardController = {
     };
     console.log(`adding station ${newStation.title}`);
     await stationStore.addStation(newStation);
-    response.redirect("/dashboard/liststations"); // Redirect to the list of stations
+    response.redirect("/dashboard"); // Redirect to the list of stations
   },
 
   // Render the list of stations view
@@ -54,11 +54,11 @@ export const dashboardController = {
     response.render("list-station", viewData); // Render the list-station.hbs with station data
   },
 
-  // Handle deletion of a station
+  // Handles deleting station
   async deleteStation(request, response) {
     const stationId = request.params.id;
     console.log(`Deleting Station ${stationId}`);
     await stationStore.deleteStationById(stationId);
-    response.redirect("/dashboard/liststations"); // Redirect to the list of stations after deletion
+    response.redirect("/dashboard"); // Redirect to the list of stations after deleting 
   },
 };
