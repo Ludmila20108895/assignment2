@@ -24,6 +24,21 @@
       "minPressure": "N/A",
       "maxPressure": "N/A",
       "_id": "ddccca4a-4dc9-4245-9ee2-b9675ad2ef1f"
+    },
+    {
+      "title": "London",
+      "latitude": "",
+      "longitude": "",
+      "userid": "d18a8e89-3588-4f3f-8b65-843368e8bf8d",
+      "weatherCode": "N/A",
+      "minTemp": "N/A",
+      "maxTemp": "N/A",
+      "windDirection": "N/A",
+      "minWindSpeed": "N/A",
+      "maxWindSpeed": "N/A",
+      "minPressure": "N/A",
+      "maxPressure": "N/A",
+      "_id": "998bfb9c-7ff3-4626-bb74-5665366053cb"
     }
   ]
 }
