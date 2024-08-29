@@ -28,14 +28,7 @@ export const dashboardController = {
       latitude: request.body.latitude,
       longitude: request.body.longitude,
       userid: loggedInUser._id,
-     /weatherCode: 'N/A',    // Placeholder values for new stations
-      minTemp: 'N/A',
-      maxTemp: 'N/A',
-      windDirection: 'N/A',
-      minWindSpeed: 'N/A',
-      maxWindSpeed: 'N/A',
-      minPressure: 'N/A',
-      maxPressure: 'N/A',
+      
     };
     console.log(`adding station ${newStation.title}`);
     await stationStore.addStation(newStation);
