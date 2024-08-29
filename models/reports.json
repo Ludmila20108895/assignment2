@@ -78,6 +78,13 @@
       "pressure": "7",
       "_id": "4b90319e-be5a-4399-8ad0-cd1cd5ae5632",
       "stationId": "fd1e3cda-8606-4d07-b8ff-f4c6a2f19125"
+    },
+    {
+      "code": "6",
+      "temperature": "7",
+      "pressure": "7",
+      "_id": "428fb4e2-bf4f-4ff6-a714-91b6ae798dc4",
+      "stationId": "535aecf5-c473-4b23-8da5-4008ca89fcb9"
     }
   ]
 }
