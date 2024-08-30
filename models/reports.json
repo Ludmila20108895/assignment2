@@ -113,6 +113,20 @@
       "pressure": "3",
       "_id": "384f9ab1-e820-4a84-95d5-6592d2458f73",
       "stationId": "535aecf5-c473-4b23-8da5-4008ca89fcb9"
+    },
+    {
+      "code": "3",
+      "temperature": "5",
+      "pressure": "2",
+      "_id": "c685c4d1-4ff7-4d87-a500-8fcc4d2b41d8",
+      "stationId": "535aecf5-c473-4b23-8da5-4008ca89fcb9"
+    },
+    {
+      "code": "7",
+      "temperature": "2",
+      "pressure": "4",
+      "_id": "1902ccee-511b-44bf-9d8a-9df8ee73b7c9",
+      "stationId": "535aecf5-c473-4b23-8da5-4008ca89fcb9"
     }
   ]
 }
