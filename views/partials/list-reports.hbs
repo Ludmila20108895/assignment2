@@ -1,6 +1,4 @@
-<table class="table is-fullwidth">
-  <thead>
-    <div class="columns is-multiline" style="margin-top: 10px;">
+<div class="columns is-multiline" style="margin-top: 10px;">
       <!-- Station Location -->
       <div class="column mr-1 has-background-primary has-text-white">
         
@@ -39,15 +37,3 @@
         
       </div>
     </div>
-    
-  </thead>
-  <tbody>
-    {{#each station.reports}}
-    
-        <a href="/station/{{../station._id}}/deletereport/{{_id}}" class="button-is-danger">
-          {{>icons/delete}}
-        </a>
-     
-    {{/each}}
-  </tbody>
-</table>
