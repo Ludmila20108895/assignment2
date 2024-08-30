@@ -1,3 +1,4 @@
+import axios from "axios"
 import express from "express";
 import { stationStore } from "../models/station-store.js";
 import { accountsController } from "./accounts-controller.js";
@@ -53,5 +54,14 @@ export const dashboardController = {
     console.log(`Deleting Station ${stationId}`);
     await stationStore.deleteStationById(stationId);
     response.redirect("/dashboard"); // Redirect to the list of stations after deleting 
+  },
+   async addreport(request, response) {
+    console.log("rendering new report");
+    const report = {};
+    const viewData = {
+      title: "Weather Report",
+      reading : report
+    };
+    response.render("dashboard", viewData);
   },
 };
