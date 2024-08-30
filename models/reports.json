@@ -101,17 +101,17 @@
       "stationId": "a696d480-36ad-49e3-b842-60d5c1855122"
     },
     {
-      "code": "",
-      "temperature": "",
-      "pressure": "",
-      "_id": "7302ce6b-3c37-4f91-bed0-72254e158ca0",
-      "stationId": "535aecf5-c473-4b23-8da5-4008ca89fcb9"
-    },
-    {
       "code": "4",
       "temperature": "2",
       "pressure": "5",
       "_id": "f46f66f4-3a01-4638-a76a-50c8e8aac85a",
+      "stationId": "535aecf5-c473-4b23-8da5-4008ca89fcb9"
+    },
+    {
+      "code": "3",
+      "temperature": "2",
+      "pressure": "3",
+      "_id": "384f9ab1-e820-4a84-95d5-6592d2458f73",
       "stationId": "535aecf5-c473-4b23-8da5-4008ca89fcb9"
     }
   ]

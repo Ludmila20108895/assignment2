@@ -1,57 +1,27 @@
-{{#each reports}}
-<div class="container">  
-  <div class="box">
-    <div class="columns is-vcentered">
-      <div class="column">
-        <h1 class="title has-text-primary">{{this.title}}</h1>
-      </div>
-      <div class="column is-narrow">
-       
-        <a href="/dashboard/deletereport/{{_id}}" class="button is-danger">
+<table class="table is-fullwidth">
+  <thead>
+    <tr>
+      <th>Location</th>
+      <th>Code</th>
+      <th>Temperature</th>
+      <th>Wind Direction</th>
+      <th>Pressure</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each station.reports}}
+    <tr>
+      <td>{{location}}</td>
+      <td>{{code}}</td>
+      <td>{{temperature}}</td>
+      <td>{{windspeed}}</td>
+      <td>{{pressure}}</td>
+       <td>
+        <a href="/station/{{../station._id}}/deletereport/{{_id}}" class="button-is-danger">
           {{>icons/delete}}
         </a>
-      </div>
-    </div>
-    <div class="columns is-multiline" style="margin-top: 10px;">
-      <!-- Station Location -->
-      <div class="column mr-1 has-background-primary has-text-white">
-        
-          <h2 class="is-size-5">Station Location</h2>
-          <p>Name: {{this.title}}</p>
-          <p>Latitude: {{this.latitude}}°</p>
-          <p>Longitude: {{this.longitude}}°</p>
-        
-      </div>
-      <!-- Weather Code -->
-       <div class="column mr-1 has-background-primary has-text-white">
-          <h2 class="is-size-5">Weather Code</h2>
-          <p>{{this.weatherCode}}</p> 
-      </div>
-      
-      <!-- Temperature -->
-       <div class="column mr-1 has-background-primary has-text-white">    
-          <h2 class="is-size-5">Temp</h2>
-          <p>Min Temp: {{this.minTemp}}°C</p>
-          <p>Max Temp: {{this.maxTemp}}°C</p>     
-      </div>
-      
-      <!-- Wind -->
-       <div class="column mr-1 has-background-primary has-text-white">
-          <h2 class="is-size-5">Wind</h2>
-          <p>Direction: {{this.windDirection}}</p>
-          <p>Min Speed: {{this.minWindSpeed}} m/s</p>
-          <p>Max Speed: {{this.maxWindSpeed}} m/s</p>
-        </div>
-      
-      <!-- Pressure -->
-       <div class="column mr-1 has-background-primary has-text-white">
-          <h2 class="is-size-5">Pressure</h2>
-          <p>Min Pressure: {{this.minPressure}} atm</p>
-          <p>Max Pressure: {{this.maxPressure}} atm</p>
-        
-      </div>
-    </div>
-  </div>
-
-</div>
-{{/each}}
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
