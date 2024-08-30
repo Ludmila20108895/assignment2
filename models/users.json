@@ -42,6 +42,13 @@
       "email": "test@try.com",
       "password": "pass",
       "_id": "6916fd30-5ff5-40ff-a028-37f476fe9a0f"
+    },
+    {
+      "firstName": "test",
+      "lastName": "",
+      "email": "test@try.com",
+      "password": "Pass",
+      "_id": "2975e3a6-803d-4b42-ad5a-114e5d6e3f74"
     }
   ]
 }
