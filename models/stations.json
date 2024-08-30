@@ -11,6 +11,13 @@
       "longitude": "",
       "userid": "d18a8e89-3588-4f3f-8b65-843368e8bf8d",
       "_id": "535aecf5-c473-4b23-8da5-4008ca89fcb9"
+    },
+    {
+      "title": "Rome",
+      "latitude": "4",
+      "longitude": "3",
+      "userid": "6916fd30-5ff5-40ff-a028-37f476fe9a0f",
+      "_id": "a696d480-36ad-49e3-b842-60d5c1855122"
     }
   ]
 }

@@ -35,6 +35,13 @@
       "email": "20108895@mail.wit.ie",
       "password": "123",
       "_id": "f179d469-dea4-42e3-bb5c-16c6cc12044b"
+    },
+    {
+      "firstName": "test",
+      "lastName": "",
+      "email": "test@try.com",
+      "password": "pass",
+      "_id": "6916fd30-5ff5-40ff-a028-37f476fe9a0f"
     }
   ]
 }
