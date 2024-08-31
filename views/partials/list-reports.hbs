@@ -1,4 +1,5 @@
 
+
 <div class="container">  
   <div class="box">
     <div class="columns is-vcentered">
@@ -60,5 +61,32 @@
     </div>
   </div>
 </div>
+<table class="table is-fullwidth">
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Temp</th>
+      <th>Wind Speed</th>
+      <th>Wind Direction</th>
+      <th>Pressure</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each station.reports}}
+    <tr>
+      <td>{{code}}</td>
+      <td>{{temperature}}</td>
+      <td>{{windSpeed}}</td>
+      <td>{{windDirection}}</td>
+      <td>{{pressure}}</td>
+       <td>
+        <a href="/station/{{../station._id}}/deletereport/{{_id}}" class="button-is-danger">
+          {{>icons/delete}}
+        </a>
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
 
 
