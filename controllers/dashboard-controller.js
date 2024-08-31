@@ -4,8 +4,8 @@ import { stationStore } from "../models/station-store.js";
 import { accountsController } from "./accounts-controller.js";
 import { stationController } from "./station-controller.js";
 import { reportController } from "./report-controller.js";
+ const weatherRequestUrl = "https://api.openweathermap.org/data/2.5/weather?lat=48.864716&lon=2.349014&appid=4977adfd49f60f08e25e4a043454a50f"
 
-const weatherRequestUrl = "https://api.openweathermap.org/data/2.5/weather?q=Tramore,Ireland&units=metric&appid=4977adfd49f60f08e25e4a043454a50f";
 
 export const dashboardController = {
   // Render the main dashboard view with a list of stations
@@ -58,20 +58,18 @@ export const dashboardController = {
     response.redirect("/dashboard"); // Redirect to the list of stations after was deleted 
   },
 
-  async addReportUsingAPI(request, response) {
+
+  async addreport(request, response) {
     console.log("rendering new report");
     let report = {};
     const result = await axios.get(weatherRequestUrl);
-    if (result.status === 200) {
+    if (result.status == 200) {
       const currentWeather = result.data;
-      report = {
-        dateTime: request.body.dateTime,
-        code: currentWeather.weather[0].id,
-        temperature: currentWeather.main.temp,
-        windSpeed: currentWeather.wind.speed,
-        pressure: currentWeather.main.pressure,
-        windDirection: currentWeather.wind.deg,
-      };
+      report.code = currentWeather.weather[0].id;
+      report.temperature = currentWeather.main.temp;
+      report.windSpeed = currentWeather.wind.speed;
+      report.pressure = currentWeather.main.pressure;
+      report.windDirection = currentWeather.wind.deg;
     }
     console.log(report);
     const viewData = {
