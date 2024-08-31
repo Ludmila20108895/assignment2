@@ -13,9 +13,11 @@ export const stationController = {
   async viewStation(request, response) {
     const stationId = request.params.id;
     const station = await stationStore.getStationById(request.params.id);
+    const reports = await reportStore.getReportsByStationId(stationId); // Fetch reports for the station
     const viewData = {
       title: station.title,
       station: station,
+      report: reports //pass reports to station-view
     };
     console.log(`Rendering station ${station.title}`);
     response.render("station-view", viewData);
