@@ -80,46 +80,11 @@
       "stationId": "fd1e3cda-8606-4d07-b8ff-f4c6a2f19125"
     },
     {
-      "code": "3",
-      "temperature": "6",
-      "pressure": "6",
-      "_id": "fe450cfa-bab1-4dc6-995a-f6c346178a73",
-      "stationId": "a696d480-36ad-49e3-b842-60d5c1855122"
-    },
-    {
-      "code": "3",
-      "temperature": "6",
-      "pressure": "2",
-      "_id": "df627ed7-59a2-4ce8-a89a-a78185c6211c",
-      "stationId": "a696d480-36ad-49e3-b842-60d5c1855122"
-    },
-    {
-      "code": "3",
-      "temperature": "6",
-      "pressure": "6",
-      "_id": "19631afc-43ae-4998-b19d-345d574be39f",
-      "stationId": "a696d480-36ad-49e3-b842-60d5c1855122"
-    },
-    {
       "code": "4",
       "temperature": "2",
       "pressure": "5",
       "_id": "f46f66f4-3a01-4638-a76a-50c8e8aac85a",
       "stationId": "535aecf5-c473-4b23-8da5-4008ca89fcb9"
-    },
-    {
-      "code": "3",
-      "temperature": "6",
-      "pressure": "8",
-      "_id": "7f4fec2a-0111-4066-8072-01dcb3e6c018",
-      "stationId": "a696d480-36ad-49e3-b842-60d5c1855122"
-    },
-    {
-      "code": "",
-      "temperature": "",
-      "pressure": "",
-      "_id": "34457ace-a7f9-44df-bfcf-9a4df0a1580a",
-      "stationId": "a696d480-36ad-49e3-b842-60d5c1855122"
     },
     {
       "code": "3",
@@ -134,20 +99,6 @@
       "pressure": "",
       "_id": "60a40fdf-cd24-4b9d-9a73-bbdfa9bd8cee",
       "stationId": "c0b1fb88-e415-439b-8224-e118843cbcc2"
-    },
-    {
-      "code": "",
-      "temperature": "",
-      "pressure": "",
-      "_id": "79be6b7a-e11d-45cf-b9a4-9570da3cdb96",
-      "stationId": "a696d480-36ad-49e3-b842-60d5c1855122"
-    },
-    {
-      "code": "",
-      "temperature": "",
-      "pressure": "",
-      "_id": "737120eb-e488-4fa9-beb9-88e10bd2a5e9",
-      "stationId": "a696d480-36ad-49e3-b842-60d5c1855122"
     }
   ]
 }
