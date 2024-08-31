@@ -99,6 +99,20 @@
       "pressure": "",
       "_id": "60a40fdf-cd24-4b9d-9a73-bbdfa9bd8cee",
       "stationId": "c0b1fb88-e415-439b-8224-e118843cbcc2"
+    },
+    {
+      "code": "",
+      "temperature": "",
+      "pressure": "",
+      "_id": "f0ab10f8-acaf-4732-b82c-558210fca82a",
+      "stationId": "a696d480-36ad-49e3-b842-60d5c1855122"
+    },
+    {
+      "code": "",
+      "temperature": "",
+      "pressure": "",
+      "_id": "f475c973-7bd0-4147-98be-9d98cd8e5702",
+      "stationId": "a696d480-36ad-49e3-b842-60d5c1855122"
     }
   ]
 }
