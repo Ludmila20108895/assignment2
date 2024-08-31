@@ -14,7 +14,20 @@
     <tr>
       <td>{{location}}</td>
       <td>{{code}}</td>
-      <td>{{temperature}}</td>
+      <td>
+       <select name="temperature-min" class="select">
+  {{#each ../temperatureOptions}}
+    <option value="{{this}}" {{#if (eq this ../minTemp)}}selected{{/if}}>{{this}}</option>
+  {{/each}}
+</select>
+
+<!-- Dropdown for Maximum Temperature -->
+<select name="temperature-max" class="select">
+  {{#each ../temperatureOptions}}
+    <option value="{{this}}" {{#if (eq this ../maxTemp)}}selected{{/if}}>{{this}}</option>
+  {{/each}}
+</select>
+        </td>
       <td>{{windspeed}}</td>
       <td>{{pressure}}</td>
        <td>
