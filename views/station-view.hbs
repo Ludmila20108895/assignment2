@@ -1,10 +1,9 @@
 <section>
   {{> menu }}
 
-  <!-- Include the list-reports partial -->
+  <!--  Included  partial/list-reports  -->
   {{> list-reports }}
   
- 
   <!-- Form to add a new report -->
   <form class="box" action="/station/{{station._id}}/addreport" method="POST">
     <label class="label">Enter Report Details:</label>
@@ -28,7 +27,7 @@
             <input class="input" type="text" placeholder="Enter Temperature" name="temperature">
           </div>
         </div>
-        <!--Wind speed input-->
+        <!-- Wind speed input -->
         <div class="field">
           <div class="control">
             <input class="input" type="text" placeholder="Enter Wind Speed" name="windSpeed">
