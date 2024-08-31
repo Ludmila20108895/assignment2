@@ -20,7 +20,7 @@ router.get("/dashboard", dashboardController.index); // The route for dashboard
 router.get("/dashboard/addstation", dashboardController.renderAddStationForm); // Render to add  new station
 router.post("/dashboard/addstation", dashboardController.addStation); // Form for adding a station
 router.get("/dashboard/liststations", dashboardController.listStations); // Render list of stations
-router.get("/dashboard/deletestation/:id", dashboardController.deleteStation); //Form for deleting sdtation
+router.get("/dashboard/deletestation/:id", dashboardController.deleteStation); //Form to delete sdtation
 
 // Routes for Stations
 router.get("/station/:id", stationController.index);
