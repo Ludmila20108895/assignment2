@@ -61,11 +61,14 @@
     </div>
   </div>
 </div>
+ <section class="box has-text-centered">
+   
 <table class="table is-fullwidth">
   <thead>
     <tr>
-      <th>Code</th>
-      <th>Temp</th>
+      <th>Date and Time</th>
+      <th>WeatherCode</th>
+      <th>Temperature</th>
       <th>Wind Speed</th>
       <th>Wind Direction</th>
       <th>Pressure</th>
@@ -74,7 +77,8 @@
   <tbody>
     {{#each station.reports}}
     <tr>
-      <td>{{code}}</td>
+      <td>{{dateAndTime}}</td>
+      <td>{{weatherCode}}</td>
       <td>{{temperature}}</td>
       <td>{{windSpeed}}</td>
       <td>{{windDirection}}</td>
@@ -88,5 +92,7 @@
     {{/each}}
   </tbody>
 </table>
+  </section>
+  
 
 
