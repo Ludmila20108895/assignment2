@@ -1,15 +1,11 @@
 
-{{#each report}}
 <div class="container">  
   <div class="box">
     <div class="columns is-vcentered">
       <div class="column">
         <h1 class="title has-text-primary">{{this.title}}</h1>
       </div>
-      <div class="column is-narrow">
-        <a href="/station/{{_id}}" class="button is-primary">
-          {{>icons/open}}
-        </a>
+      
         <a href="/dashboard/deletestation/{{_id}}" class="button is-danger">
           {{>icons/delete}}
         </a>
@@ -72,4 +68,4 @@
   </div>
 
 </div>
-{{/each}}
+
