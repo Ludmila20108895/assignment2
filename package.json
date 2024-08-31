@@ -16,7 +16,7 @@
     "fs-extra": "^11.1.0",
     "lowdb": "^5.1.0",
     "uuid": "^9.0.0",
-    "axios": "^1.7.5"
+    "axios": "^1.7.6"
   },
   "repository": {
     "url": "https://github.com/wit-hdip-comp-sci-2023/wather-station"

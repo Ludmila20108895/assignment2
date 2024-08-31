@@ -65,6 +65,7 @@ export const dashboardController = {
     if (result.status === 200) {
       const currentWeather = result.data;
       report = {
+        dateTime: request.body.dateTime,
         code: currentWeather.weather[0].id,
         temperature: currentWeather.main.temp,
         windSpeed: currentWeather.wind.speed,

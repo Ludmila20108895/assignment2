@@ -18,6 +18,7 @@ export const reportController = {
     const stationId = request.params.stationid;
     const reportId = request.params.reportid;
     const updatedReport = {
+      dateTime: request.body.dateTime,
      code: request.body.code,
       temperature: request.body.temperature,
       windSpeed: request.body.windSpeed,
