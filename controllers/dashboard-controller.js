@@ -3,7 +3,7 @@ import express from "express";
 import { stationStore } from "../models/station-store.js";
 import { accountsController } from "./accounts-controller.js";
 import {stationController} from "./station-controller.js";
-
+import {reportController}  from "./report-controller.js";
 const weatherRequestUrl = "https://api.openweathermap.org/data/2.5/weather?q=Tramore,Ireland&units=metric&appid=4977adfd49f60f08e25e4a043454a50f"
 
 export const dashboardController = {
