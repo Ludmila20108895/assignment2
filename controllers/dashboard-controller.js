@@ -24,7 +24,7 @@ export const dashboardController = {
     response.render("add-station", { title: "Add New Station" }); 
   },
 
-  //  submission to add a new station
+  //  Information  to add a new station
   async addStation(request, response) {
     const loggedInUser = await accountsController.getLoggedInUser(request);
     const newStation = {
@@ -47,7 +47,7 @@ export const dashboardController = {
       stations: stations,
     };
     console.log("Listing all stations");
-    response.render("list-station", viewData); // Render the list-station.hbs with station data
+    response.render("list-station", viewData); 
   },
 
   // Handles deleting station
@@ -55,10 +55,9 @@ export const dashboardController = {
     const stationId = request.params.id;
     console.log(`Deleting Station ${stationId}`);
     await stationStore.deleteStationById(stationId);
-    response.redirect("/dashboard"); // Redirect to the list of stations after deleting 
+    response.redirect("/dashboard"); // Redirect to the list of stations after was deleted 
   },
 
-  // If you want to keep an addreport method that uses an external API, define it uniquely
   async addReportUsingAPI(request, response) {
     console.log("rendering new report");
     let report = {};

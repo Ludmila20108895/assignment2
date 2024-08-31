@@ -17,6 +17,7 @@ export const reportController = {
   async addReport(request, response) {
     const stationId = request.params.id;
     const newReport = {
+      dateTime: request.body.dateTime,
       code: request.body.code,
       temperature: request.body.temperature,
       windSpeed: request.body.windSpeed,

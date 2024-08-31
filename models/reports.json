@@ -108,6 +108,15 @@
       "pressure": "",
       "_id": "78d887d1-ab87-43e1-8608-1911989b7953",
       "stationId": "a696d480-36ad-49e3-b842-60d5c1855122"
+    },
+    {
+      "code": "",
+      "temperature": "",
+      "windSpeed": "",
+      "windDirection": "",
+      "pressure": "",
+      "_id": "83536670-4331-4a8b-ae39-ee60a4dc283f",
+      "stationId": "a696d480-36ad-49e3-b842-60d5c1855122"
     }
   ]
 }
