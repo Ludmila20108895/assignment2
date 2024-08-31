@@ -2,19 +2,20 @@
 <div class="container">  
   <div class="box">
     <div class="columns is-vcentered">
+      
       <div class="column">
-        <!-- Displaying report title, using 'this.title' if it's part of the report data -->
+        
         <h1 class="title has-text-primary">{{station.title}}</h1>
       </div>
       <div class="column is-narrow">
-        <!-- Delete button for each report, referencing the station and report IDs -->
-        <a href="/station/{{../station._id}}/deletereport/{{station._id}}" class="button is-danger">
+        
+        <a href="/station/{{../station._id}}/deletereport/{{_id}}" class="button is-danger">
           {{>icons/delete}} Delete
         </a>
       </div>
     </div>
     <div class="columns is-multiline" style="margin-top: 10px;">
-      <!-- Displaying detailed information about the report -->
+      
       
       <!-- Weather Code Section -->
       <div class="column mr-1 has-background-primary has-text-white">
@@ -22,7 +23,7 @@
         <p>
           <img src="https://cdn.glitch.global/63e2329c-8dad-4d95-baf1-edd58a099039/droppers.png?v=1725038421098" width="50" height="50">
         </p>
-        <p>{{this.weatherCode}}</p> 
+        <p>{{station.weatherCode}}</p> 
       </div>
 
       <!-- Temperature Section -->
@@ -31,8 +32,8 @@
         <p>
           <img src="https://cdn.glitch.global/63e2329c-8dad-4d95-baf1-edd58a099039/thermometer.png?v=1725037301408" width="50" height="50">
         </p>
-        <p>Min Temp: {{this.minTemp}}°C</p>
-        <p>Max Temp: {{this.maxTemp}}°C</p>     
+        <p>Min Temp: {{station.minTemp}}°C</p>
+        <p>Max Temp: {{station.maxTemp}}°C</p>     
       </div>
       
       <!-- Wind Section -->
@@ -41,9 +42,9 @@
         <p>
           <img src="https://cdn.glitch.global/63e2329c-8dad-4d95-baf1-edd58a099039/wind.png?v=1725037704312" height="50" width="50">
         </p>
-        <p>Direction: {{this.windDirection}}</p>
-        <p>Min Speed: {{this.minWindSpeed}} m/s</p>
-        <p>Max Speed: {{this.maxWindSpeed}} m/s</p>
+        <p>Direction: {{station.windDirection}}</p>
+        <p>Min Speed: {{station.minWindSpeed}} m/s</p>
+        <p>Max Speed: {{station.maxWindSpeed}} m/s</p>
       </div>
       
       <!-- Pressure Section -->
@@ -58,4 +59,5 @@
     </div>
   </div>
 </div>
+
 
