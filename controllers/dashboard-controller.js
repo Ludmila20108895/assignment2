@@ -62,7 +62,11 @@ export const dashboardController = {
   async addreport(request, response) {
     console.log("rendering new report");
     let report = {};
-    const result = await axios.get(weatherRequestUrl);
+    const lat = request.body.lat;
+    const lng = request.body.lng;
+    const latLongRequestUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&units=metric&appid=YOUR_API_KEY_HERE`;
+    const result = await axios.get(latLongRequestUrl);
+    console.log(latLongRequestUrl)
     if (result.status == 200) {
       const currentWeather = result.data;
       report.code = currentWeather.weather[0].id;
