@@ -3,20 +3,27 @@
 
   <!-- Include the list-reports partial -->
   {{> list-reports }}
-  <div class="section">
-  <table "class=table if-fullwidth is hoverable">
-    <thead>
-    <tr>
-    <th>Date and Time</th>
-    <th>Weather Code</th>
-    <th>Temperature</th>
-    <th>Wind Speed</th>
-    <th>Wind Direction</th>
-    <th>Presure</th>
-    </tr>
-    </thead> 
-  </table>
-
+  
+  <section class="box has-text-centered">
+    <h3 class="is-3 is-text-primary">
+      Weather Readings
+    </h3>
+    <div class="section">
+      <table class="table is-fullwidth is-hoverable">
+        <thead>
+          <tr>
+            <th>Date and Time</th>
+            <th>Weather Code</th>
+            <th>Temperature</th>
+            <th>Wind Speed</th>
+            <th>Wind Direction</th>
+            <th>Pressure</th>
+          </tr>
+        </thead> 
+      </table>
+    </div>
+  </section>
+  
   <!-- Form to add a new report -->
   <form class="box" action="/station/{{station._id}}/addreport" method="POST">
     <label class="label">Enter Report Details:</label>
