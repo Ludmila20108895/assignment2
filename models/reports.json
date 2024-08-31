@@ -117,6 +117,24 @@
       "pressure": "",
       "_id": "d0550b16-7940-40ac-908b-6a7d456687d3",
       "stationId": "a696d480-36ad-49e3-b842-60d5c1855122"
+    },
+    {
+      "code": "500",
+      "temperature": "",
+      "windSpeed": "",
+      "windDirection": "",
+      "pressure": "",
+      "_id": "dbc6a80f-4965-4921-8347-55585ec9fbaf",
+      "stationId": "a696d480-36ad-49e3-b842-60d5c1855122"
+    },
+    {
+      "code": "",
+      "temperature": "",
+      "windSpeed": "",
+      "windDirection": "",
+      "pressure": "",
+      "_id": "8fd44a88-0aac-40c6-b590-4face1f03136",
+      "stationId": "a696d480-36ad-49e3-b842-60d5c1855122"
     }
   ]
 }
