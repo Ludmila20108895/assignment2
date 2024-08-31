@@ -141,6 +141,13 @@
       "pressure": "",
       "_id": "79be6b7a-e11d-45cf-b9a4-9570da3cdb96",
       "stationId": "a696d480-36ad-49e3-b842-60d5c1855122"
+    },
+    {
+      "code": "",
+      "temperature": "",
+      "pressure": "",
+      "_id": "737120eb-e488-4fa9-beb9-88e10bd2a5e9",
+      "stationId": "a696d480-36ad-49e3-b842-60d5c1855122"
     }
   ]
 }
