@@ -1,3 +1,40 @@
+
+
+
+   
+<table class="table is-fullwidth">
+  <thead>
+    <tr>
+      <th>Date and Time</th>
+      <th>WeatherCode</th>
+      <th>Temperature</th>
+      <th>Wind Speed</th>
+      <th>Wind Direction</th>
+      <th>Pressure</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each station.reports}}
+    <tr>
+      <td>{{dateAndTime}}</td>
+      <td>{{weatherCode}}</td>
+      <td>{{temperature}}</td>
+      <td>{{windSpeed}}</td>
+      <td>{{windDirection}}</td>
+      <td>{{pressure}}</td>
+       <td>
+        <a href="/station/{{../station._id}}/deletereport/{{_id}}" class="button-is-danger">
+          {{>icons/delete}}
+        </a>
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+  </section>
+  
+
+
 <!-- Form to add a new report -->
   <form class="box" action="/station/{{station._id}}/addreport" method="POST">
     <label class="label">Enter Report Details:</label>
