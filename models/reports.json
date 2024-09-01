@@ -162,6 +162,15 @@
       "pressure": "6",
       "_id": "a5206333-ca19-421f-ae7c-0e0b6bef0b00",
       "stationId": "cc760980-b9b8-4815-8ea2-15c4a26d9b81"
+    },
+    {
+      "code": "7",
+      "temperature": "3",
+      "windSpeed": "3",
+      "windDirection": "",
+      "pressure": "",
+      "_id": "2984e126-4e97-4b71-ac08-bf7c24774f38",
+      "stationId": "184dcd48-01d8-47b9-9e79-0b92f82e6940"
     }
   ]
 }
