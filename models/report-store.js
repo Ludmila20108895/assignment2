@@ -9,12 +9,12 @@ export const reportStore = {
     return db.data.reports;
   },
 
-  async addReport(stationId, report) {
+   async addReport(stationId, report) {
     await db.read();
-    report._id = v4();
-    report.stationId = stationId;
-    db.data.reports.push(report);
-    await db.write();
+    report._id = v4(); 
+    report.stationId = stationId; 
+    db.data.reports.push(report); 
+    await db.write(); 
     return report;
   },
 
