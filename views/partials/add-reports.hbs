@@ -3,31 +3,78 @@
   <label class="label">Enter Report Details:</label>
   <div class="field is-horizontal">
     <div class="field-body">
-      <!-- Date/time input-->
+
+      <!-- Date and Time -->
       <div class="field">
         <div class="control">
           <input class="input" type="text" placeholder="Enter Date and Time" name="dateTime" required>
         </div>
       </div>
-       <!-- Code input -->
+
+      <!-- Weather Code -->
       <div class="field">
         <div class="control">
           <input class="input" type="text" placeholder="Enter Weather Code" name="code" required>
         </div>
       </div>
-        <!-- Temperature input -->
+
+      <!-- Average Temperature -->
       <div class="field">
         <div class="control">
-          <input class="input" type="text" placeholder="Enter Temperature" name="temperature" required>
+          <input class="input" type="text" placeholder="Enter Average Temperature" name="temperature" required>
         </div>
       </div>
-       <!-- Wind speed input -->
+
+      <!-- Min/Max Temperature Toggle -->
+      <div class="field">
+        <div class="control">
+          <label class="checkbox">
+            <input type="checkbox" id="toggleMinMaxTemp" onchange="toggleMinMax('temperature')"> Enter Min/Max Temperature
+          </label>
+        </div>
+      </div>
+
+      <!-- Min/Max Temperature Inputs -->
+      <div class="field min-max-temperature" style="display:none;">
+        <div class="control">
+          <input class="input" type="text" placeholder="Enter Minimum Temperature" name="minTemperature">
+        </div>
+      </div>
+      <div class="field min-max-temperature" style="display:none;">
+        <div class="control">
+          <input class="input" type="text" placeholder="Enter Maximum Temperature" name="maxTemperature">
+        </div>
+      </div>
+
+      <!-- Average Wind Speed -->
       <div class="field">
         <div class="control">
           <input class="input" type="text" placeholder="Enter Wind Speed" name="windSpeed" required>
         </div>
       </div>
-       <!-- Wind direction dropdown -->
+
+      <!-- Min/Max Wind Speed Toggle -->
+      <div class="field">
+        <div class="control">
+          <label class="checkbox">
+            <input type="checkbox" id="toggleMinMaxWindSpeed" onchange="toggleMinMax('windSpeed')"> Enter Min/Max Wind Speed
+          </label>
+        </div>
+      </div>
+
+      <!-- Min/Max Wind Speed Inputs -->
+      <div class="field min-max-windSpeed" style="display:none;">
+        <div class="control">
+          <input class="input" type="text" placeholder="Enter Minimum Wind Speed" name="minWindSpeed">
+        </div>
+      </div>
+      <div class="field min-max-windSpeed" style="display:none;">
+        <div class="control">
+          <input class="input" type="text" placeholder="Enter Maximum Wind Speed" name="maxWindSpeed">
+        </div>
+      </div>
+
+      <!-- Wind Direction -->
       <div class="field">
         <div class="control">
           <div class="select">
@@ -43,11 +90,35 @@
           </div>
         </div>
       </div>
+
+      <!-- Average Pressure -->
       <div class="field">
         <div class="control">
           <input class="input" type="text" placeholder="Enter Pressure" name="pressure" required>
         </div>
       </div>
+
+      <!-- Min/Max Pressure Toggle -->
+      <div class="field">
+        <div class="control">
+          <label class="checkbox">
+            <input type="checkbox" id="toggleMinMaxPressure" onchange="toggleMinMax('pressure')"> Enter Min/Max Pressure
+          </label>
+        </div>
+      </div>
+
+      <!-- Min/Max Pressure Inputs -->
+      <div class="field min-max-pressure" style="display:none;">
+        <div class="control">
+          <input class="input" type="text" placeholder="Enter Minimum Pressure" name="minPressure">
+        </div>
+      </div>
+      <div class="field min-max-pressure" style="display:none;">
+        <div class="control">
+          <input class="input" type="text" placeholder="Enter Maximum Pressure" name="maxPressure">
+        </div>
+      </div>
+
     </div>
   </div>
   <div class="field">
@@ -56,3 +127,12 @@
     </div>
   </div>
 </form>
+
+<script>
+  function toggleMinMax(type) {
+    const minMaxFields = document.querySelectorAll(`.min-max-${type}`);
+    minMaxFields.forEach(field => {
+      field.style.display = field.style.display === 'none' ? 'block' : 'none';
+    });
+  }
+</script>

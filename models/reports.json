@@ -171,6 +171,16 @@
       "pressure": "",
       "_id": "2984e126-4e97-4b71-ac08-bf7c24774f38",
       "stationId": "184dcd48-01d8-47b9-9e79-0b92f82e6940"
+    },
+    {
+      "dateTime": "12/9/2098",
+      "code": "7",
+      "temperature": "7",
+      "windSpeed": "4",
+      "windDirection": "SE",
+      "pressure": "4",
+      "_id": "85e87b3a-dab7-4e30-98c6-cc5a5d7c85fa",
+      "stationId": "5b8aa547-2979-4d0d-ae85-1bf5b22f740c"
     }
   ]
 }
