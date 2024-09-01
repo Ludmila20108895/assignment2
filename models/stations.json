@@ -20,25 +20,18 @@
       "_id": "4fbe951d-f916-49d2-bc4b-d6083eb51ea1"
     },
     {
-      "title": "Paris",
-      "latitude": "6",
-      "longitude": "7",
+      "title": "London",
+      "latitude": "51.5085",
+      "longitude": "-0.1257",
       "userid": "6916fd30-5ff5-40ff-a028-37f476fe9a0f",
-      "_id": "a01c654b-4215-415e-80a2-99af5dacafcc"
+      "_id": "d4488231-dd94-49f0-b9cb-0f214241ffbe"
     },
     {
       "title": "Berlin",
-      "latitude": "3",
-      "longitude": "9",
+      "latitude": "52.5244",
+      "longitude": "13.4105",
       "userid": "6916fd30-5ff5-40ff-a028-37f476fe9a0f",
-      "_id": "d23c8d82-e416-44c9-bee0-c036332243a4"
-    },
-    {
-      "title": "Dublin",
-      "latitude": "53.3498",
-      "longitude": "6.2603",
-      "userid": "6916fd30-5ff5-40ff-a028-37f476fe9a0f",
-      "_id": "223a4f41-d399-4bb5-8294-2f1e4906ddbb"
+      "_id": "960f5ea9-f43b-42f2-9340-609abaf5020f"
     }
   ]
 }

@@ -217,6 +217,18 @@
       "maxPressure": "7",
       "_id": "1769bca4-a607-451a-8ac7-c0f69500595e",
       "stationId": "d23c8d82-e416-44c9-bee0-c036332243a4"
+    },
+    {
+      "code": "200",
+      "minTemperature": "292.35",
+      "maxTemperature": "294.39",
+      "minWindSpeed": "2.57",
+      "maxWindSpeed": "2.57",
+      "windDirection": "NW",
+      "minPressure": "1010",
+      "maxPressure": "1010",
+      "_id": "7de4d83f-92b7-4a34-b240-b94a4a5a21c9",
+      "stationId": "d4488231-dd94-49f0-b9cb-0f214241ffbe"
     }
   ]
 }
