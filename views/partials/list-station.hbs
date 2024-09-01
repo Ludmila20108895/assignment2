@@ -22,9 +22,9 @@
           <p>
           <img src=" https://cdn.glitch.global/63e2329c-8dad-4d95-baf1-edd58a099039/location.png?v=1725035682050" width="50" height="50">
         </p>
-          <p>Name: {{this.title}}</p>
-          <p>Latitude: {{this.latitude}}°</p>
-          <p>Longitude: {{this.longitude}}°</p>
+          <p>Name: {{station.title}}</p>
+          <p>Latitude: {{station.latitude}}°</p>
+          <p>Longitude: {{station.longitude}}°</p>
         
       </div>
       <!-- Weather Code -->
@@ -42,8 +42,8 @@
          <p>
            <img src="https://cdn.glitch.global/63e2329c-8dad-4d95-baf1-edd58a099039/thermometer.png?v=1725037301408" width="50" height="50">
          </p>
-          <p>Min Temp: {{this.minTemp}}°C</p>
-          <p>Max Temp: {{this.maxTemp}}°C</p>     
+          <p>Min Temp: {{station.minTemp}}°C</p>
+          <p>Max Temp: {{station.maxTemp}}°C</p>     
       </div>
       
       <!-- Wind -->
@@ -52,9 +52,9 @@
          <p>
            <img src="https://cdn.glitch.global/63e2329c-8dad-4d95-baf1-edd58a099039/wind.png?v=1725037704312" height="50" width="50">
          </p>
-          <p>Direction: {{this.windDirection}}</p>
-          <p>Min Speed: {{this.minWindSpeed}} m/s</p>
-          <p>Max Speed: {{this.maxWindSpeed}} m/s</p>
+          <p>Direction: {{station.windDirection}}</p>
+          <p>Min Speed: {{station.minWindSpeed}} m/s</p>
+          <p>Max Speed: {{station.maxWindSpeed}} m/s</p>
         </div>
       
       <!-- Pressure -->
@@ -63,8 +63,8 @@
          <p>
            <img src="https://cdn.glitch.global/63e2329c-8dad-4d95-baf1-edd58a099039/barometer.png?v=1725038182546" height="50" width="50">
          </p>
-          <p>Min Pressure: {{this.minPressure}} atm</p>
-          <p>Max Pressure: {{this.maxPressure}} atm</p>
+          <p>Min Pressure: {{station.minPressure}} atm</p>
+          <p>Max Pressure: {{station.maxPressure}} atm</p>
         
       </div>
     </div>
