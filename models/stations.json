@@ -20,8 +20,11 @@
       "_id": "4fbe951d-f916-49d2-bc4b-d6083eb51ea1"
     },
     {
+      "title": "Paris",
+      "latitude": "3",
+      "longitude": "4",
       "userid": "6916fd30-5ff5-40ff-a028-37f476fe9a0f",
-      "_id": "df7f7b6c-5de4-4d6a-932b-69141753f173"
+      "_id": "5b8aa547-2979-4d0d-ae85-1bf5b22f740c"
     }
   ]
 }
