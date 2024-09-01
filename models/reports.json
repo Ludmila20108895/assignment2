@@ -155,20 +155,13 @@
       "stationId": "51f03d9d-1c88-4df0-9c08-6734ace16405"
     },
     {
-      "code": "400",
-      "temperature": "3",
-      "pressure": "3",
-      "_id": "d3e19004-9078-4d9a-9bcc-58836b789455",
+      "code": "6",
+      "temperature": "",
+      "windSpeed": "3",
+      "windDirection": "SE",
+      "pressure": "6",
+      "_id": "a5206333-ca19-421f-ae7c-0e0b6bef0b00",
       "stationId": "cc760980-b9b8-4815-8ea2-15c4a26d9b81"
-    },
-    {
-      "code": "2",
-      "temperature": "372",
-      "windSpeed": "2",
-      "windDirection": "",
-      "pressure": "0",
-      "_id": "8192eed8-b9e0-4921-ba6d-aa1773d93384",
-      "stationId": "51f03d9d-1c88-4df0-9c08-6734ace16405"
     }
   ]
 }
