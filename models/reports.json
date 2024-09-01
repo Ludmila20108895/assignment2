@@ -229,6 +229,30 @@
       "maxPressure": "1010",
       "_id": "7de4d83f-92b7-4a34-b240-b94a4a5a21c9",
       "stationId": "d4488231-dd94-49f0-b9cb-0f214241ffbe"
+    },
+    {
+      "code": "200",
+      "minTemperature": "288.7",
+      "maxTemperature": "292.03",
+      "minWindSpeed": "2.57",
+      "maxWindSpeed": "2.57",
+      "windDirection": "NE",
+      "minPressure": "1018",
+      "maxPressure": "1018",
+      "_id": "523ae372-f9e0-4c54-96b1-fc8aac34eecc",
+      "stationId": "960f5ea9-f43b-42f2-9340-609abaf5020f"
+    },
+    {
+      "code": "200",
+      "minTemperature": "294.1",
+      "maxTemperature": "301.66",
+      "minWindSpeed": "8.23",
+      "maxWindSpeed": "8.23",
+      "windDirection": "NW",
+      "minPressure": "1014",
+      "maxPressure": "1014",
+      "_id": "97002647-58da-494e-bcdd-e179b2e488e2",
+      "stationId": "51381c53-e6c0-402e-9ba9-620475e637a9"
     }
   ]
 }
