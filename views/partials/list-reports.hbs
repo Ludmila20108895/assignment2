@@ -1,14 +1,12 @@
-{{#each reports}}
+
 <div class="container">  
   <div class="box">
     <div class="columns is-vcentered">
       <div class="column">
-        <h1 class="title has-text-primary">{{this.title}}</h1>
+        <h1 class="title has-text-primary">{{station.title}}</h1>
       </div>
       <div class="column is-narrow">
-        <a href="/station/{{_id}}" class="button is-primary">
-          {{>icons/open}}
-        </a>
+        
         <a href="/dashboard/deletestation/{{_id}}" class="button is-danger">
           {{>icons/delete}}
         </a>
@@ -22,9 +20,9 @@
           <p>
           <img src=" https://cdn.glitch.global/63e2329c-8dad-4d95-baf1-edd58a099039/location.png?v=1725035682050" width="50" height="50">
         </p>
-          <p>Name: {{this.title}}</p>
-          <p>Latitude: {{this.latitude}}°</p>
-          <p>Longitude: {{this.longitude}}°</p>
+          <p>Name: {{station.title}}</p>
+          <p>Latitude: {{station.latitude}}°</p>
+          <p>Longitude: {{station.longitude}}°</p>
         
       </div>
       <!-- Weather Code -->
@@ -71,5 +69,5 @@
   </div>
 
 </div>
-{{/each}}
+
 
