@@ -20,18 +20,8 @@
       "_id": "4fbe951d-f916-49d2-bc4b-d6083eb51ea1"
     },
     {
-      "title": "Paris",
-      "latitude": "48.8647",
-      "longitude": "2.349",
       "userid": "6916fd30-5ff5-40ff-a028-37f476fe9a0f",
-      "_id": "51f03d9d-1c88-4df0-9c08-6734ace16405"
-    },
-    {
-      "title": "Berlin",
-      "latitude": " 52.52",
-      "longitude": "13.405",
-      "userid": "6916fd30-5ff5-40ff-a028-37f476fe9a0f",
-      "_id": "cc760980-b9b8-4815-8ea2-15c4a26d9b81"
+      "_id": "184dcd48-01d8-47b9-9e79-0b92f82e6940"
     }
   ]
 }

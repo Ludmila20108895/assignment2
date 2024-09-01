@@ -6,9 +6,10 @@
         <h1 class="title has-text-primary">{{station.title}}</h1>
       </div>
      <div class="column is-narrow">
+        <a href="/dashboard/deletestation/{{station._id}}" class="button is-danger">
+  {{>icons/delete}} Delete</a>
+
         
-        <a href="/station/{{../station._id}}/deletereport/{{_id}}" class="button is-danger">
-          {{>icons/delete}} Delete</a>
       </div>
       </div>
     

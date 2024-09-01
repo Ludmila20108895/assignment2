@@ -44,7 +44,7 @@ export const stationController = {
     const stationId = request.params.stationid;
     const reportId = request.params.reportid;
     console.log(`Deleting Report ${reportId} from Station ${stationId}`);
-    await reportStore.deleteReport(reportId);
+    await stationtore.deleteReport(reportId);
     response.redirect("/station/" + stationId);
 },
 
