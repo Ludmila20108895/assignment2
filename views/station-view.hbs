@@ -2,31 +2,36 @@
 {{> menu }}
  {{> list-reports }}
 
-
+<!-- Form to add a new report -->
 <form class="box" action="/station/{{station._id}}/addreport" method="POST">
   <label class="label">Enter Report Details:</label>
   <div class="field is-horizontal">
     <div class="field-body">
+       <!-- Location input -->
       <div class="field">
         <div class="control">
           <input class="input" type="text" placeholder="Enter Date and Time" name="dateTime">
         </div>
       </div>
+      <!-- Code input -->
       <div class="field">
         <div class="control">
           <input class="input" type="text" placeholder="Enter Weather Code" name="code">
         </div>
       </div>
+      <!-- Temperature input -->
       <div class="field">
         <div class="control">
           <input class="input" type="text" placeholder="Enter Temperature" name="temperature">
         </div>
       </div>
+        <!-- Wind speed input -->
       <div class="field">
         <div class="control">
           <input class="input" type="text" placeholder="Enter Wind Speed" name="windSpeed">
         </div>
       </div>
+      <!-- Wind direction dropdown -->
       <div class="field">
         <div class="control">
           <div class="select">
@@ -42,6 +47,7 @@
           </div>
         </div>
       </div>
+       <!-- Pressure input -->
       <div class="field">
         <div class="control">
           <input class="input" type="text" placeholder="Enter Pressure" name="pressure">
@@ -49,6 +55,7 @@
       </div>
     </div>
   </div>
+    <!-- Submit button -->
   <div class="field">
     <div class="control">
       <button class="button is-primary">Submit Report</button>

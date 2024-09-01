@@ -3,9 +3,11 @@ import { stationStore } from "../models/station-store.js";
 export const stationController = {
    async index(request, response) {
     const station = await stationStore.getStationById(request.params.id);
-    const viewData = {
+    const reports = await reportStore.getReportsByStationId(station._id); // Fetch all reports for this station
+     const viewData = {
       title: "Station",
       station: station,
+        reports: reports, // Pass reports to the view
     };
     response.render("station-view", viewData);
   },
