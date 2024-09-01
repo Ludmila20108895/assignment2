@@ -1,52 +1,61 @@
- <table class="table is-fullwidth">
-  <thead>
-    <tr>
-      <th>Location</th>
-      <th>Code</th>
-      <th>Temperature</th>
-      <th>Wind Direction</th>
-      <th>Pressure</th>
-    </tr>
-  </thead>
-  <tbody>
-    {{#each station.reports}}
-    <tr>
-      <td>{{location}}</td>
-      <td>{{code}}</td>
-      <td>{{temperature}}</td>
-      <td>{{windspeed}}</td>
-      <td>{{pressure}}</td>
-       <td>
-        <a href="/station/{{../station._id}}/deletereport/{{_id}}" class="button-is-danger">
-          {{>icons/delete}}
-        </a>
-      </td>
-    </tr>
-    {{/each}}
-  </tbody>
-</table>
-
-<form class="box" action="/station/{{station._id}}/addreport" method="POST">
-    <label>Enter Report Details:</label>
+<!-- Form to add a new report -->
+  <form class="box" action="/station/{{station._id}}/addreport" method="POST">
+    <label class="label">Enter Report Details:</label>
     <div class="field is-horizontal">
       <div class="field-body">
+        <!-- Location input -->
         <div class="field">
-          <input class="input" type="text" placeholder="Enter Location" name="location">
+          <div class="control">
+            <input class="input" type="text" placeholder="Enter Date and Time" name="date/time">
+          </div>
         </div>
+        <!-- Code input -->
         <div class="field">
-          <input class="input" type="text" placeholder="Enter Code" name="code">
+          <div class="control">
+            <input class="input" type="text" placeholder="Enter Weather Code" name="code">
+          </div>
         </div>
+        <!-- Temperature input -->
         <div class="field">
-          <input class="input" type="text" placeholder="Enter Temperature" name="temperature">
+          <div class="control">
+            <input class="input" type="text" placeholder="Enter Temperature" name="temperature">
+          </div>
         </div>
+        <!-- Wind speed input -->
         <div class="field">
-          <input class="input" type="text" placeholder="Enter Wind Speed" name="windspeed">
+          <div class="control">
+            <input class="input" type="text" placeholder="Enter Wind Speed" name="windSpeed">
+          </div>
         </div>
+        <!-- Wind direction dropdown -->
         <div class="field">
-          <input class="input" type="text" placeholder="Enter Pressure" name="pressure">
+          <div class="control">
+            <div class="select">
+              <select name="windDirection">
+                <option value="">Select Wind Direction</option>
+                <option value="N">North (N)</option>
+                <option value="NE">Northeast (NE)</option>
+                <option value="NW">Northwest (NW)</option>
+                <option value="S">South (S)</option>
+                <option value="SE">Southeast (SE)</option>
+                <option value="SW">Southwest (SW)</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <!-- Pressure input -->
+        <div class="field">
+          <div class="control">
+            <input class="input" type="text" placeholder="Enter Pressure" name="pressure">
+          </div>
         </div>
       </div>
     </div>
-    <button class="button is-primary">Submit Report</button>
+    <!-- Submit button -->
+    <div class="field">
+      <div class="control">
+        <button class="button is-primary">Submit Report</button>
+      </div>
+    </div>
   </form>
 </section>
