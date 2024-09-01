@@ -12,6 +12,7 @@
       </div>
     </div>
     
+    {{#each station.reports}}
     <div class="columns is-multiline" style="margin-top: 10px;">
       <!-- Station Location -->
       <div class="column mr-1 has-background-primary has-text-white">
@@ -19,9 +20,9 @@
         <p>
           <img src="https://cdn.glitch.global/63e2329c-8dad-4d95-baf1-edd58a099039/location.png?v=1725035682050" width="50" height="50">
         </p>
-        <p>Name: {{station.title}}</p>
-        <p>Latitude: {{station.latitude}}°</p>
-        <p>Longitude: {{station.longitude}}°</p>
+        <p>Name: {{../station.title}}</p>
+        <p>Latitude: {{../station.latitude}}°</p>
+        <p>Longitude: {{../station.longitude}}°</p>
       </div>
 
       <!-- Weather Code -->
@@ -30,7 +31,7 @@
         <p>
           <img src="https://cdn.glitch.global/63e2329c-8dad-4d95-baf1-edd58a099039/droppers.png?v=1725038421098" width="50" height="50">
         </p>
-        <p>{{this.code}}</p> 
+        <p>{{code}}</p> 
       </div>
       
       <!-- Temperature -->
@@ -39,8 +40,8 @@
         <p>
           <img src="https://cdn.glitch.global/63e2329c-8dad-4d95-baf1-edd58a099039/thermometer.png?v=1725037301408" width="50" height="50">
         </p>
-        <p>Min Temp: {{this.minTemperature}}°C</p>
-        <p>Max Temp: {{this.maxTemperature}}°C</p>     
+        <p>Min Temp: {{minTemperature}}°C</p>
+        <p>Max Temp: {{maxTemperature}}°C</p>     
       </div>
       
       <!-- Wind -->
@@ -49,10 +50,11 @@
         <p>
           <img src="https://cdn.glitch.global/63e2329c-8dad-4d95-baf1-edd58a099039/wind.png?v=1725037704312" height="50" width="50">
         </p>
-        <p>Direction: {{this.windDirection}}</p>
-        <p>Min Speed: {{this.minWindSpeed}} m/s</p>
-        <p>Max Speed: {{this.maxWindSpeed}} m/s</p>
+         <p>Direction: {{windDirection}}</p>
+        <p>Min Speed: {{minWindSpeed}} m/s</p>
+        <p>Max Speed: {{maxWindSpeed}} m/s</p>
       </div>
+       
       
       <!-- Pressure -->
       <div class="column mr-1 has-background-primary has-text-white">
@@ -60,10 +62,12 @@
         <p>
           <img src="https://cdn.glitch.global/63e2329c-8dad-4d95-baf1-edd58a099039/barometer.png?v=1725038182546" height="50" width="50">
         </p>
-        <p>Min Pressure: {{this.minPressure}} atm</p>
-        <p>Max Pressure: {{this.maxPressure}} atm</p>
+         <p>Min Pressure: {{minPressure}} atm</p>
+         <p>Max Pressure: {{maxPressure}} atm</p>
+       
       </div>
     </div>
+    {{/each}}
  
   </div>
 </div>

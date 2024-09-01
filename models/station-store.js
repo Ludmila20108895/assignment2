@@ -20,9 +20,11 @@ export const stationStore = {
 
  async getStationById(id) {
     await db.read();
-    const list = db.data.stations.find((station) => station._id === id);
-    list.reports = await reportStore.getReportsByStationId(list._id);
-    return list;
+    const station = db.data.stations.find((station) => station._id === id);
+    if (station) {
+      station.reports = await reportStore.getReportsByStationId(station._id);
+    }
+    return station;
 },
 
   async getStationsByUserId(userid) {
