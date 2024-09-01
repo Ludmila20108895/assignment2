@@ -6,17 +6,47 @@ import { accountsController } from "./accounts-controller.js";
 const apiKey = "4977adfd49f60f08e25e4a043454a50f"; // My API key
 
 export const dashboardController = {
-  
-  // Render the main dashboard view and update list of stations and reports
+  // Render the main dashboard view and update stations and reports list
   async index(request, response) {
     const loggedInUser = await accountsController.getLoggedInUser(request);
     const stations = await stationStore.getStationsByUserId(loggedInUser._id); 
+    
+    // Fetch weather data for four cities
+    const cities = ["London", "Paris", "New York", "Tokyo"]; 
+    const weatherData = await this.getWeatherForCities(cities);
+
     const viewData = {
       title: "Station Dashboard",
       stations: stations,
+      weatherData: weatherData, 
     };
     console.log("dashboard rendering");
     response.render("dashboard-view", viewData);
+  },
+
+  // Function to fetch weather data for multiple cities
+  async getWeatherForCities(cities) {
+    const weatherData = [];
+
+    for (const city of cities) {
+      try {
+        const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`);
+        if (response.status === 200) {
+          weatherData.push({
+            city: city,
+            temp: response.data.main.temp,
+            pressure: response.data.main.pressure,
+            windSpeed: response.data.wind.speed,
+            windDirection: response.data.wind.deg,
+            code: response.data.weather[0].id
+          });
+        }
+      } catch (error) {
+        console.error(`Error fetching weather data for ${city}:`, error);
+      }
+    }
+
+    return weatherData;
   },
 
   // Render the add-station view
@@ -38,7 +68,7 @@ export const dashboardController = {
     response.redirect("/dashboard"); // Redirect to the list of stations
   },
 
-  // Renders  list of stations view
+  // Renders list of stations view
   async listStations(request, response) {
     const loggedInUser = await accountsController.getLoggedInUser(request);
     const stations = await stationStore.getStationsByUserId(loggedInUser._id);
@@ -84,8 +114,7 @@ export const dashboardController = {
     }
 
     console.log(report);
-    // Assuming the report should be added to the station's reports and then redirect
-    await stationStore.addReportToStation(stationId, report); // Hypothetical method to add report
-    response.redirect(`/station/${stationId}`); // Redirect back to the station's view
+    await stationStore.addReportToStation(stationId, report);//  method to add report
+    response.redirect(`/station/${stationId}`); // Redirect back to the station view
   },
 };
