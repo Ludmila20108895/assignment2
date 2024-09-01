@@ -1,5 +1,5 @@
 import { stationStore } from "../models/station-store.js";
-
+import { reportStore } from "../models/report-store.js"; // Import reportStore
 export const stationController = {
    async index(request, response) {
     const station = await stationStore.getStationById(request.params.id);
@@ -8,6 +8,7 @@ export const stationController = {
       title: "Station",
       station: station,
         reports: reports, // Pass reports to the view
+       
     };
     response.render("station-view", viewData);
   },
