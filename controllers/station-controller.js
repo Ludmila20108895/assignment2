@@ -1,14 +1,11 @@
 import { stationStore } from "../models/station-store.js";
-import { reportStore } from "../models/report-store.js"; // Import reportStore
+
 export const stationController = {
    async index(request, response) {
     const station = await stationStore.getStationById(request.params.id);
-    const reports = await reportStore.getReportsByStationId(station._id); // Fetch all reports for this station
-     const viewData = {
+    const viewData = {
       title: "Station",
       station: station,
-        reports: reports, // Pass reports to the view
-       
     };
     response.render("station-view", viewData);
   },
@@ -16,11 +13,9 @@ export const stationController = {
   async viewStation(request, response) {
     const stationId = request.params.id;
     const station = await stationStore.getStationById(request.params.id);
-    const reports = await reportStore.getReportsByStationId(stationId); // Fetch reports for the station
     const viewData = {
       title: station.title,
       station: station,
-      report: reports //pass reports to station-view
     };
     console.log(`Rendering station ${station.title}`);
     response.render("station-view", viewData);
