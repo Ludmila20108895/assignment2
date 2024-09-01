@@ -1,24 +1,37 @@
-# baseline
-Web Development Template
-A starter project for learning web development
+# Weather Station Application
 
-This is an Express.js project, designed to work well with the Glitch development environment. It includes basic express setup, handlebars templating, routing, + lowdb database.
+## Overview
+The Weather Station Application is a web-based platform that allows users to monitor weather conditions at many stations. Users can view real-time weather data, add new weather stations, and log weather reports for specific stations. The application is built using Node.js, Express, and Handlebars, with LowDB for data storage.
 
-This template is prepared in support of Web Development II module in the Higher Diploma in Computing at SETU, Ireland.
+## Features
+- **User Authentication**: Users can sign up, log in, and log out.
+- **Weather Station Management**: Users can add, update, and delete weather stations.
+- **Weather Reports**: Users can add weather reports that include data such as temperature, wind speed, wind direction, and pressure.
+- **Dashboard**: A user-friendly dashboard to manage stations and view the latest weather reports.
 
-Weather Station Application/baseline
-Overview
-The Weather Station Application is a web-based application for monitoring and managing weather stations. Users can add new stations, view details of existing stations, update station information, and delete stations. This project is replicated (Lab 3 : Playlist)
+## Project Structure
+- **Controllers**: Manage the logic for requests and sending responses.
+  - `about-controller.js`
+  - `accounts-controller.js`
+  - `dashboard-controller.js`
+  - `station-controller.js`
+  - `report-controller.js`
+- **Models**: Handle data storage and retrieval.
+  - `object-store.js`
+  - `report-store.js`
+  - `station-store.js`
+  - `user-store.js`
+- **Views**: Handlebars templates for rendering HTML pages.
+  - Layouts and partials for consistent UI components.
+- **Utilities**: Helps functions for initializing database connections.
 
-Features
-Add new weather stations
-View a list of all weather stations
-View detailed information about each station
-Update station details
-Delete a station
-Getting Started
-Prerequisites
-Ensure you have the following installed on your machine:
-
-Node.js (version 16.x.x)
-A text editor or IDE (such as Visual Studio Code)
+-**Dependencies** :
+--Node.js
+--Express
+--Handlebars
+--LowDB
+--UUID
+--Axios
+--Body-Parser
+--Cookie-Parser
+--Express-Fileupload
