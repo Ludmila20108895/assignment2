@@ -1,0 +1,52 @@
+ <table class="table is-fullwidth">
+  <thead>
+    <tr>
+      <th>Location</th>
+      <th>Code</th>
+      <th>Temperature</th>
+      <th>Wind Direction</th>
+      <th>Pressure</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each station.reports}}
+    <tr>
+      <td>{{location}}</td>
+      <td>{{code}}</td>
+      <td>{{temperature}}</td>
+      <td>{{windspeed}}</td>
+      <td>{{pressure}}</td>
+       <td>
+        <a href="/station/{{../station._id}}/deletereport/{{_id}}" class="button-is-danger">
+          {{>icons/delete}}
+        </a>
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+<form class="box" action="/station/{{station._id}}/addreport" method="POST">
+    <label>Enter Report Details:</label>
+    <div class="field is-horizontal">
+      <div class="field-body">
+        <div class="field">
+          <input class="input" type="text" placeholder="Enter Location" name="location">
+        </div>
+        <div class="field">
+          <input class="input" type="text" placeholder="Enter Code" name="code">
+        </div>
+        <div class="field">
+          <input class="input" type="text" placeholder="Enter Temperature" name="temperature">
+        </div>
+        <div class="field">
+          <input class="input" type="text" placeholder="Enter Wind Speed" name="windspeed">
+        </div>
+        <div class="field">
+          <input class="input" type="text" placeholder="Enter Pressure" name="pressure">
+        </div>
+      </div>
+    </div>
+    <button class="button is-primary">Submit Report</button>
+  </form>
+</section>

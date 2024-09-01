@@ -162,16 +162,6 @@
       "pressure": "6",
       "_id": "a025fedd-a11b-4421-abac-4690dc220b32",
       "stationId": "51f03d9d-1c88-4df0-9c08-6734ace16405"
-    },
-    {
-      "dateTime": "12/9/2098",
-      "code": "",
-      "temperature": "",
-      "windSpeed": "",
-      "windDirection": "",
-      "pressure": "",
-      "_id": "138cc95e-3ed7-4804-8fe0-34b60ce1ae48",
-      "stationId": "51f03d9d-1c88-4df0-9c08-6734ace16405"
     }
   ]
 }
