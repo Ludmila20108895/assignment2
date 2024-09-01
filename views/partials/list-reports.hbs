@@ -1,98 +1,75 @@
-
-
+{{#each stations}}
 <div class="container">  
   <div class="box">
     <div class="columns is-vcentered">
-      
       <div class="column">
-        
-        <h1 class="title has-text-primary">{{station.title}}</h1>
+        <h1 class="title has-text-primary">{{this.title}}</h1>
       </div>
       <div class="column is-narrow">
-        
-        <a href="/station/{{../station._id}}/deletereport/{{_id}}" class="button is-danger">
-          {{>icons/delete}} Delete
+        <a href="/station/{{_id}}" class="button is-primary">
+          {{>icons/open}}
+        </a>
+        <a href="/dashboard/deletestation/{{_id}}" class="button is-danger">
+          {{>icons/delete}}
         </a>
       </div>
     </div>
     <div class="columns is-multiline" style="margin-top: 10px;">
-      
-      
-      <!-- Weather Code Section -->
+      <!-- Station Location -->
       <div class="column mr-1 has-background-primary has-text-white">
-        <h2 class="is-size-5">Weather Code:</h2>
-        <p>
-          <img src="https://cdn.glitch.global/63e2329c-8dad-4d95-baf1-edd58a099039/droppers.png?v=1725038421098" width="50" height="50">
+        
+          <h2 class="is-size-5">Station Location:</h2>
+          <p>
+          <img src=" https://cdn.glitch.global/63e2329c-8dad-4d95-baf1-edd58a099039/location.png?v=1725035682050" width="50" height="50">
         </p>
-        <p>{{station.weatherCode}}</p> 
+          <p>Name: {{this.title}}</p>
+          <p>Latitude: {{this.latitude}}°</p>
+          <p>Longitude: {{this.longitude}}°</p>
+        
       </div>
-
-      <!-- Temperature Section -->
-      <div class="column mr-1 has-background-primary has-text-white">    
-        <h2 class="is-size-5">Temperature:</h2>
-        <p>
-          <img src="https://cdn.glitch.global/63e2329c-8dad-4d95-baf1-edd58a099039/thermometer.png?v=1725037301408" width="50" height="50">
-        </p>
-        <p>Min Temp: {{station.minTemp}}°C</p>
-        <p>Max Temp: {{station.maxTemp}}°C</p>     
-      </div>
-      
-      <!-- Wind Section -->
-      <div class="column mr-1 has-background-primary has-text-white">
-        <h2 class="is-size-5">Wind:</h2>
-        <p>
-          <img src="https://cdn.glitch.global/63e2329c-8dad-4d95-baf1-edd58a099039/wind.png?v=1725037704312" height="50" width="50">
-        </p>
-        <p>Direction: {{station.windDirection}}</p>
-        <p>Min Speed: {{station.minWindSpeed}} m/s</p>
-        <p>Max Speed: {{station.maxWindSpeed}} m/s</p>
+      <!-- Weather Code -->
+       <div class="column mr-1 has-background-primary has-text-white">
+          <h2 class="is-size-5">Weather Code:</h2>
+         <p>
+           <img src="https://cdn.glitch.global/63e2329c-8dad-4d95-baf1-edd58a099039/droppers.png?v=1725038421098" width="50" height="50">
+         </p>
+          <p>{{this.weatherCode}}</p> 
       </div>
       
-      <!-- Pressure Section -->
-      <div class="column mr-1 has-background-primary has-text-white">
-        <h2 class="is-size-5">Pressure:</h2>
-        <p>
-          <img src="https://cdn.glitch.global/63e2329c-8dad-4d95-baf1-edd58a099039/barometer.png?v=1725038182546" height="50" width="50">
-        </p>
-        <p>Min Pressure: {{this.minPressure}} atm</p>
-        <p>Max Pressure: {{this.maxPressure}} atm</p>
+      <!-- Temperature -->
+       <div class="column mr-1 has-background-primary has-text-white">    
+          <h2 class="is-size-5">Temperature:</h2>
+         <p>
+           <img src="https://cdn.glitch.global/63e2329c-8dad-4d95-baf1-edd58a099039/thermometer.png?v=1725037301408" width="50" height="50">
+         </p>
+          <p>Min Temp: {{this.minTemp}}°C</p>
+          <p>Max Temp: {{this.maxTemp}}°C</p>     
       </div>
       
+      <!-- Wind -->
+       <div class="column mr-1 has-background-primary has-text-white">
+          <h2 class="is-size-5">Wind:</h2>
+         <p>
+           <img src="https://cdn.glitch.global/63e2329c-8dad-4d95-baf1-edd58a099039/wind.png?v=1725037704312" height="50" width="50">
+         </p>
+          <p>Direction: {{this.windDirection}}</p>
+          <p>Min Speed: {{this.minWindSpeed}} m/s</p>
+          <p>Max Speed: {{this.maxWindSpeed}} m/s</p>
+        </div>
+      
+      <!-- Pressure -->
+       <div class="column mr-1 has-background-primary has-text-white">
+          <h2 class="is-size-5">Pressure:</h2>
+         <p>
+           <img src="https://cdn.glitch.global/63e2329c-8dad-4d95-baf1-edd58a099039/barometer.png?v=1725038182546" height="50" width="50">
+         </p>
+          <p>Min Pressure: {{this.minPressure}} atm</p>
+          <p>Max Pressure: {{this.maxPressure}} atm</p>
+        
+      </div>
     </div>
   </div>
-</div>
- <section class="box has-text-centered">
-   
-<table class="table is-fullwidth">
-  <thead>
-    <tr>
-      <th>Date and Time</th>
-      <th>WeatherCode</th>
-      <th>Temperature</th>
-      <th>Wind Speed</th>
-      <th>Wind Direction</th>
-      <th>Pressure</th>
-    </tr>
-  </thead>
-  <tbody>
-    {{#each station.reports}}
-    <tr>
-      <td>{{dateAndTime}}</td>
-      <td>{{weatherCode}}</td>
-      <td>{{temperature}}</td>
-      <td>{{windSpeed}}</td>
-      <td>{{windDirection}}</td>
-      <td>{{pressure}}</td>
-       <td>
-        <a href="/station/{{../station._id}}/deletereport/{{_id}}" class="button-is-danger">
-          {{>icons/delete}}
-        </a>
-      </td>
-    </tr>
-    {{/each}}
-  </tbody>
-</table>
-  </section>
-  
 
+</div>
+{{/each}}
 
