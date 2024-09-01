@@ -17,59 +17,55 @@
     <div class="columns is-multiline" style="margin-top: 10px;">
       <!-- Station Location -->
       <div class="column mr-1 has-background-primary has-text-white">
-        
-          <h2 class="is-size-5">Station Location:</h2>
-          <p>
-          <img src=" https://cdn.glitch.global/63e2329c-8dad-4d95-baf1-edd58a099039/location.png?v=1725035682050" width="50" height="50">
+        <h2 class="is-size-5">Station Location:</h2>
+        <p>
+          <img src="https://cdn.glitch.global/63e2329c-8dad-4d95-baf1-edd58a099039/location.png?v=1725035682050" width="50" height="50">
         </p>
-          <p>Name: {{station.title}}</p>
-          <p>Latitude: {{station.latitude}}°</p>
-          <p>Longitude: {{station.longitude}}°</p>
-        
+        <p>Name: {{title}}</p>
+        <p>Latitude: {{latitude}}°</p>
+        <p>Longitude: {{longitude}}°</p>
       </div>
+
       <!-- Weather Code -->
-       <div class="column mr-1 has-background-primary has-text-white">
-          <h2 class="is-size-5">Weather Code:</h2>
-         <p>
-           <img src="https://cdn.glitch.global/63e2329c-8dad-4d95-baf1-edd58a099039/droppers.png?v=1725038421098" width="50" height="50">
-         </p>
-          <p>{{this.weatherCode}}</p> 
+      <div class="column mr-1 has-background-primary has-text-white">
+        <h2 class="is-size-5">Weather Code:</h2>
+        <p>
+          <img src="https://cdn.glitch.global/63e2329c-8dad-4d95-baf1-edd58a099039/droppers.png?v=1725038421098" width="50" height="50">
+        </p>
+        <p>{{#if latestReport}}{{latestReport.code}}{{else}}N/A{{/if}}</p>
       </div>
       
       <!-- Temperature -->
-       <div class="column mr-1 has-background-primary has-text-white">    
-          <h2 class="is-size-5">Temperature:</h2>
-         <p>
-           <img src="https://cdn.glitch.global/63e2329c-8dad-4d95-baf1-edd58a099039/thermometer.png?v=1725037301408" width="50" height="50">
-         </p>
-          <p>Min Temp: {{station.minTemp}}°C</p>
-          <p>Max Temp: {{station.maxTemp}}°C</p>     
+      <div class="column mr-1 has-background-primary has-text-white">    
+        <h2 class="is-size-5">Temperature:</h2>
+        <p>
+          <img src="https://cdn.glitch.global/63e2329c-8dad-4d95-baf1-edd58a099039/thermometer.png?v=1725037301408" width="50" height="50">
+        </p>
+        <p>Min Temp: {{#if latestReport}}{{latestReport.minTemperature}}°C{{else}}N/A{{/if}}</p>
+        <p>Max Temp: {{#if latestReport}}{{latestReport.maxTemperature}}°C{{else}}N/A{{/if}}</p>
       </div>
       
       <!-- Wind -->
-       <div class="column mr-1 has-background-primary has-text-white">
-          <h2 class="is-size-5">Wind:</h2>
-         <p>
-           <img src="https://cdn.glitch.global/63e2329c-8dad-4d95-baf1-edd58a099039/wind.png?v=1725037704312" height="50" width="50">
-         </p>
-          <p>Direction: {{station.windDirection}}</p>
-          <p>Min Speed: {{station.minWindSpeed}} m/s</p>
-          <p>Max Speed: {{station.maxWindSpeed}} m/s</p>
-        </div>
+      <div class="column mr-1 has-background-primary has-text-white">
+        <h2 class="is-size-5">Wind:</h2>
+        <p>
+          <img src="https://cdn.glitch.global/63e2329c-8dad-4d95-baf1-edd58a099039/wind.png?v=1725037704312" height="50" width="50">
+        </p>
+        <p>Direction: {{#if latestReport}}{{latestReport.windDirection}}{{else}}N/A{{/if}}</p>
+        <p>Min Speed: {{#if latestReport}}{{latestReport.minWindSpeed}} m/s{{else}}N/A{{/if}}</p>
+        <p>Max Speed: {{#if latestReport}}{{latestReport.maxWindSpeed}} m/s{{else}}N/A{{/if}}</p>
+      </div>
       
       <!-- Pressure -->
-       <div class="column mr-1 has-background-primary has-text-white">
-          <h2 class="is-size-5">Pressure:</h2>
-         <p>
-           <img src="https://cdn.glitch.global/63e2329c-8dad-4d95-baf1-edd58a099039/barometer.png?v=1725038182546" height="50" width="50">
-         </p>
-          <p>Min Pressure: {{station.minPressure}} atm</p>
-          <p>Max Pressure: {{station.maxPressure}} atm</p>
-        
+      <div class="column mr-1 has-background-primary has-text-white">
+        <h2 class="is-size-5">Pressure:</h2>
+        <p>
+          <img src="https://cdn.glitch.global/63e2329c-8dad-4d95-baf1-edd58a099039/barometer.png?v=1725038182546" height="50" width="50">
+        </p>
+        <p>Min Pressure: {{#if latestReport}}{{latestReport.minPressure}} atm{{else}}N/A{{/if}}</p>
+        <p>Max Pressure: {{#if latestReport}}{{latestReport.maxPressure}} atm{{else}}N/A{{/if}}</p>
       </div>
     </div>
   </div>
-
 </div>
 {{/each}}
-

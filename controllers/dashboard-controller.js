@@ -2,18 +2,15 @@ import axios from "axios";
 import express from "express";
 import { stationStore } from "../models/station-store.js";
 import { accountsController } from "./accounts-controller.js";
-import { stationController } from "./station-controller.js";
-import { reportController } from "./report-controller.js";
- const weatherRequestUrl = "https://api.openweathermap.org/data/2.5/weather?lat=48.864716&lon=2.349014&appid=4977adfd49f60f08e25e4a043454a50f"
-
 
 export const dashboardController = {
-  // Render the main dashboard view with a list of stations
+  // Render the main dashboard view with the lists of stations and  reports
   async index(request, response) {
     const loggedInUser = await accountsController.getLoggedInUser(request);
+    const stations = await stationStore.getStationsByUserId(loggedInUser._id); // Fetch stations with latest report data
     const viewData = {
       title: "Station Dashboard",
-      stations: await stationStore.getStationsByUserId(loggedInUser._id),
+      stations: stations,
     };
     console.log("dashboard rendering");
     response.render("dashboard-view", viewData);
@@ -21,10 +18,10 @@ export const dashboardController = {
 
   // Render the add-station view
   renderAddStationForm(request, response) {
-    response.render("add-station", { title: "Add New Station" }); 
+    response.render("add-station", { title: "Add New Station" });
   },
 
-  //  Information  to add a new station
+  // Add a new station and redirect to dashboard
   async addStation(request, response) {
     const loggedInUser = await accountsController.getLoggedInUser(request);
     const newStation = {
@@ -47,18 +44,18 @@ export const dashboardController = {
       stations: stations,
     };
     console.log("Listing all stations");
-    response.render("list-station", viewData); 
+    response.render("list-station", viewData);
   },
 
-  // Handles deleting station
+  // manage to delete station 
   async deleteStation(request, response) {
     const stationId = request.params.id;
     console.log(`Deleting Station ${stationId}`);
     await stationStore.deleteStationById(stationId);
-    response.redirect("/dashboard"); // Redirect to the list of stations after was deleted 
+    response.redirect("/dashboard"); // Redirect to the list of stations after deletion
   },
 
-
+  // Add a report using external API data (openweathermap)
   async addreport(request, response) {
     console.log("rendering new report");
     let report = {};
@@ -66,11 +63,14 @@ export const dashboardController = {
     const lng = request.body.lng;
     const latLongRequestUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&units=metric&appid=YOUR_API_KEY_HERE`;
     const result = await axios.get(latLongRequestUrl);
-    console.log(latLongRequestUrl)
+    console.log(latLongRequestUrl);
     if (result.status == 200) {
       const currentWeather = result.data;
       report.code = currentWeather.weather[0].id;
-      report.temperature = currentWeather.main.temp;
+      report.minTemperature = currentWeather.main.temp_min; // Adding min temp
+      report.maxTemperature = currentWeather.main.temp_max; // Adding max temp
+      report.minWindSpeed = currentWeather.wind.speed_min; //  min wind speed
+      report.maxWindSpeed = currentWeather.wind.speed_max; // max wind speed
       report.windSpeed = currentWeather.wind.speed;
       report.pressure = currentWeather.main.pressure;
       report.windDirection = currentWeather.wind.deg;
