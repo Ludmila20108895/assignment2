@@ -181,6 +181,18 @@
       "pressure": "4",
       "_id": "85e87b3a-dab7-4e30-98c6-cc5a5d7c85fa",
       "stationId": "5b8aa547-2979-4d0d-ae85-1bf5b22f740c"
+    },
+    {
+      "code": "200",
+      "minTemperature": "5",
+      "maxTemperature": "7",
+      "minWindSpeed": "6",
+      "maxWindSpeed": "8",
+      "windDirection": "SE",
+      "minPressure": "6",
+      "maxPressure": "9",
+      "_id": "da5d2604-eb41-4f2a-93a1-4449311c31dc",
+      "stationId": "5b8aa547-2979-4d0d-ae85-1bf5b22f740c"
     }
   ]
 }
