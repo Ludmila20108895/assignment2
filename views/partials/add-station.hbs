@@ -1,22 +1,24 @@
-
-
 <form class="section box" action="/dashboard/addstation" method="POST">
-  <h1 class="is-size-3 is-centered has-text-weight-bold has-text-primary">
+  <h1 class="is-size-3 has-text-centered has-text-weight-bold has-text-primary">
     Add New Station
   </h1>
   <div class="field-body">
     <div class="field">
-    <label class="label has-text-weight-semibold is-size-4">Add New Station</label>
-    <input class="input" type="text" placeholder="Enter station title" name="title">
+      <label class="label has-text-weight-semibold is-size-5" for="stationTitle">Add New Station</label>
+      <input class="input" type="text" id="stationTitle" name="stationTitle" placeholder="Enter station title" required aria-label="Station Title" autocomplete="off">
+    </div>
+    <div class="field">
+      <label class="label has-text-weight-semibold is-size-5" for="stationLatitude">Add Station Latitude</label>
+      <input class="input" type="number" id="stationLatitude" name="stationLatitude" placeholder="Enter station latitude" step="any" required aria-label="Station Latitude" autocomplete="off">
+    </div>
+    <div class="field">
+      <label class="label has-text-weight-semibold is-size-5" for="stationLongitude">Add Station Longitude</label>
+      <input class="input" type="number" id="stationLongitude" name="stationLongitude" placeholder="Enter station longitude" step="any" required aria-label="Station Longitude" autocomplete="off">
+    </div>
   </div>
   <div class="field">
-    <label class="label has-text-weight-semibold is-size-4">Add Station Latitude</label>
-    <input class="input" type="text" placeholder="Enter station latitude" name="latitude">
+    <div class="control">
+      <button class="button is-primary" type="submit">Submit Report</button>
+    </div>
   </div>
-  <div class="field">
-    <label class="label has-text-weight-semibold is-size-4">Add Station Longitude</label>
-    <input class="input" type="text" placeholder="Enter station longitude" name="longitude">
-  </div>
-  </div>
-  
 </form>
