@@ -205,6 +205,18 @@
       "maxPressure": "9",
       "_id": "360a0d85-0f05-4185-9359-c8b725eb86d1",
       "stationId": "a01c654b-4215-415e-80a2-99af5dacafcc"
+    },
+    {
+      "code": "700",
+      "minTemperature": "5",
+      "maxTemperature": "7",
+      "minWindSpeed": "6",
+      "maxWindSpeed": "8",
+      "windDirection": "N",
+      "minPressure": "5",
+      "maxPressure": "7",
+      "_id": "1769bca4-a607-451a-8ac7-c0f69500595e",
+      "stationId": "d23c8d82-e416-44c9-bee0-c036332243a4"
     }
   ]
 }

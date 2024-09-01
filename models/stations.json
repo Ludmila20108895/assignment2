@@ -25,6 +25,13 @@
       "longitude": "7",
       "userid": "6916fd30-5ff5-40ff-a028-37f476fe9a0f",
       "_id": "a01c654b-4215-415e-80a2-99af5dacafcc"
+    },
+    {
+      "title": "Berlin",
+      "latitude": "3",
+      "longitude": "9",
+      "userid": "6916fd30-5ff5-40ff-a028-37f476fe9a0f",
+      "_id": "d23c8d82-e416-44c9-bee0-c036332243a4"
     }
   ]
 }
