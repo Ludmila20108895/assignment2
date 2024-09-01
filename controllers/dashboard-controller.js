@@ -3,13 +3,14 @@ import express from "express";
 import { stationStore } from "../models/station-store.js";
 import { accountsController } from "./accounts-controller.js";
 
-const apiKey = "4977adfd49f60f08e25e4a043454a50f"; // my API key
+const apiKey = "4977adfd49f60f08e25e4a043454a50f"; // My API key
 
 export const dashboardController = {
-  // Render the main dashboard view with a list of stations and  reports
+  
+  // Render the main dashboard view and update list of stations and reports
   async index(request, response) {
     const loggedInUser = await accountsController.getLoggedInUser(request);
-    const stations = await stationStore.getStationsByUserId(loggedInUser._id); // Fetch stations with latest report data
+    const stations = await stationStore.getStationsByUserId(loggedInUser._id); 
     const viewData = {
       title: "Station Dashboard",
       stations: stations,
@@ -37,7 +38,7 @@ export const dashboardController = {
     response.redirect("/dashboard"); // Redirect to the list of stations
   },
 
-  // Render the list of stations view
+  // Renders  list of stations view
   async listStations(request, response) {
     const loggedInUser = await accountsController.getLoggedInUser(request);
     const stations = await stationStore.getStationsByUserId(loggedInUser._id);
@@ -60,9 +61,14 @@ export const dashboardController = {
   // Add a report using external API data (OpenWeatherMap)
   async addreport(request, response) {
     console.log("rendering new report");
+    const stationId = request.params.id; // Get station ID from request params
+    
+    // Fetch station details from the database
+    const station = await stationStore.getStationById(stationId);
+    const lat = station.latitude;
+    const lng = station.longitude;
+
     let report = {};
-    const lat = request.body.lat; 
-    const lng = request.body.lng; 
     const latLongRequestUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&units=metric&appid=${apiKey}`;
     const result = await axios.get(latLongRequestUrl);
     console.log(latLongRequestUrl);
@@ -78,10 +84,8 @@ export const dashboardController = {
     }
 
     console.log(report);
-    const viewData = {
-      title: "Weather Report",
-      reading: report,
-    };
-    response.render("dashboard-view", viewData);
+    // Assuming the report should be added to the station's reports and then redirect
+    await stationStore.addReportToStation(stationId, report); // Hypothetical method to add report
+    response.redirect(`/station/${stationId}`); // Redirect back to the station's view
   },
 };
